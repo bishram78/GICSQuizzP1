@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">GICSQuizz</string>
+    <string name="main_activity_toolbar_title">Google IC Scholarship Quizzz</string>
+
+    <!--Button name to show score and result of the Quiz-->
+    <string name="btn_txt_see_score">Quiz Result</string>
+    <string name="java_txt_error_missing">One of your question is missing.\nPlease make sure that you have ticked all question.</string>
+
+    <!--Question number one-->
+    <string name="text_ques_first">When was the Course of Google India Challenge Scholarship 2018 started?</string>
+
+    <!--Question number two-->
+    <string name="text_ques_second">How many students will be selected for Phase 2 only from Android Developer track?</string>
+
+    <!--Question number three-->
+    <string name="text_ques_third">How much time is allocated for the Google India Challenge Scholarship: Android Basics Program?</string>
+
+    <!--Question number four-->
+    <string name="text_ques_fourth">How much time is allocated for the Google India Challenge Scholarship: Android Basics Nanodegree Program?</string>
+
+    <!--Question number five-->
+    <string name="text_ques_fifth">What are the instructors\' names of Google India Challenge Scholarship: Android Basics Course?</string>
+
+    <string name="text_total_score">%1$s \nYour total score is %2$d/5.</string>
+    <string name="thanks_4_participate">Thanks for participating in quiz.</string>
+    <string name="visit_again">Please visit again.</string>
+    <string name="extraordinary">Extraordinary.</string>
+    <string name="excellent">Excellent.</string>
+    <string name="very_good">Very Good.</string>
+    <string name="good">Good.</string>
+    <string name="hmm">Hmm!</string>
+    <string name="ops">Ops!</string>
+
+    <string name="option_1_a">January 1</string>
+    <string name="option_1_b">January 21</string>
+    <string name="option_1_c">February 7</string>
+    <string name="option_1_d">February 14</string>
+
+    <string name="option_2_a">500 Students</string>
+    <string name="option_2_b">1000 Students</string>
+    <string name="option_2_c">350 Students</string>
+    <string name="option_2_d">750 Students</string>
+
+    <string name="option_3_a">1 Month</string>
+    <string name="option_3_b">2 Months</string>
+    <string name="option_3_c">3 Months</string>
+    <string name="option_3_d">4 Months</string>
+
+    <string name="option_4_a">5 Months</string>
+    <string name="option_4_b">6 Months</string>
+    <string name="option_4_c">7 Months</string>
+    <string name="option_4_d">8 Months</string>
+
+    <string name="option_5_a">Kunal Chawla &amp; Katherine Kuan</string>
+    <string name="option_5_b">Kunal Chawla &amp; Lyla Fujiwara</string>
+    <string name="option_5_c">Katherine Kuan &amp; Lyla Fujiwara</string>
+    <string name="option_5_d">Kunal Chawla, Katherine Kuan &amp; Lyla Fujiwara</string>
+</resources>

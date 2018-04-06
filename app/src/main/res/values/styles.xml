@@ -1,0 +1,92 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="LandscapeNoToolbar" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Buttons">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="ButtonShowScore" parent="Buttons">
+        <item name="android:paddingTop">@dimen/margin_padding_14dp</item>
+        <item name="android:paddingBottom">@dimen/margin_padding_14dp</item>
+        <item name="android:layout_marginBottom">@dimen/margin_padding_12dp</item>
+        <item name="android:textSize">@dimen/text_size_20sp</item>
+    </style>
+
+    <style name="LayoutForButton">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:paddingBottom">@dimen/margin_padding_12dp</item>
+        <item name="android:paddingTop">@dimen/margin_padding_12dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="LinearLayoutWrapper">
+        <item name="android:layout_marginTop">@dimen/margin_padding_16dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_padding_4dp</item>
+        <item name="android:layout_marginRight">@dimen/margin_padding_4dp</item>
+        <item name="android:background">@drawable/google_scholarship_india_badge</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="LinearLayoutWrapperBottom">
+        <item name="android:layout_marginTop">@dimen/margin_padding_16dp</item>
+        <item name="android:layout_marginBottom">@dimen/margin_padding_12dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_padding_4dp</item>
+        <item name="android:layout_marginRight">@dimen/margin_padding_4dp</item>
+        <item name="android:background">@drawable/google_scholarship_india_badge</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="LinearLayoutForOptions">
+        <item name="android:background">@drawable/border_for_options</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingBottom">@dimen/margin_padding_16dp</item>
+        <item name="android:paddingLeft">@dimen/margin_padding_16dp</item>
+        <item name="android:paddingRight">@dimen/margin_padding_16dp</item>
+    </style>
+
+    <style name="TextViewQuestions">
+        <item name="android:background">@color/colorBlack175</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">left|start</item>
+        <item name="android:padding">@dimen/margin_padding_16dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/text_size_24sp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="CheckBoxMain">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+    </style>
+
+    <style name="CheckBoxTop" parent="CheckBoxMain">
+        <item name="android:layout_marginBottom">@dimen/margin_padding_4dp</item>
+        <item name="android:layout_marginTop">@dimen/margin_padding_8dp</item>
+    </style>
+
+    <style name="CheckBoxBottom" parent="CheckBoxMain">
+        <item name="android:layout_marginBottom">@dimen/margin_padding_4dp</item>
+    </style>
+
+    <style name="CheckBoxMiddle" parent="CheckBoxMain">
+        <item name="android:layout_marginBottom">@dimen/margin_padding_4dp</item>
+    </style>
+</resources>

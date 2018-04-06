@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/LinearLayoutWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/TextViewQuestions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_ques_first" />
+
+                <LinearLayout
+                    style="@style/LinearLayoutForOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <CheckBox
+                        android:onClick="optionsEvent"
+                        android:id="@+id/option_1_a"
+                        style="@style/CheckBoxTop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/option_1_a" />
+
+                    <CheckBox
+                        android:onClick="optionsEvent"
+                        android:id="@+id/option_1_b"
+                        style="@style/CheckBoxMiddle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/option_1_b" />
+
+                    <CheckBox
+                        android:onClick="optionsEvent"
+                        android:id="@+id/option_1_c"
+                        style="@style/CheckBoxMiddle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/option_1_c" />
+
+                    <CheckBox
+                        android:onClick="optionsEvent"
+                        android:id="@+id/option_1_d"
+                        style="@style/CheckBoxBottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/option_1_d" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayoutWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/TextViewQuestions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_ques_second" />
+
+                <LinearLayout
+                    style="@style/LinearLayoutForOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <CheckBox
+                        android:onClick="optionsEvent"
+                        android:id="@+id/option_2_a"
+                        style="@style/CheckBoxTop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/option_2_a" />
+
+                    <CheckBox
+                        android:onClick="optionsEvent"
+                        android:id="@+id/option_2_b"
+                        style="@style/CheckBoxMiddle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/option_2_b" />
+
+                    <CheckBox
+                        android:onClick="optionsEvent"
+                        android:id="@+id/option_2_c"
+                        style="@style/CheckBoxMiddle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/option_2_c" />
+
+                    <CheckBox
+                        android:onClick="optionsEvent"
+                        android:id="@+id/option_2_d"
+                        style="@style/CheckBoxBottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/option_2_d" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayoutWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/TextViewQuestions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_ques_third" />
+
+                <LinearLayout
+                    style="@style/LinearLayoutForOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <CheckBox
+                        android:onClick="optionsEvent"
+                        android:id="@+id/option_3_a"
+                        style="@style/CheckBoxTop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/option_3_a" />
+
+                    <CheckBox
+                        android:onClick="optionsEvent"
+                        android:id="@+id/option_3_b"
+                        style="@style/CheckBoxMiddle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/option_3_b" />
+
+                    <CheckBox
+                        android:onClick="optionsEvent"
+                        android:id="@+id/option_3_c"
+                        style="@style/CheckBoxMiddle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/option_3_c" />
+
+                    <CheckBox
+                        android:onClick="optionsEvent"
+                        android:id="@+id/option_3_d"
+                        style="@style/CheckBoxBottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/option_3_d" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayoutWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/TextViewQuestions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_ques_fourth" />
+
+                <LinearLayout
+                    style="@style/LinearLayoutForOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <CheckBox
+                        android:onClick="optionsEvent"
+                        android:id="@+id/option_4_a"
+                        style="@style/CheckBoxTop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/option_4_a" />
+
+                    <CheckBox
+                        android:onClick="optionsEvent"
+                        android:id="@+id/option_4_b"
+                        style="@style/CheckBoxMiddle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/option_4_b" />
+
+                    <CheckBox
+                        android:onClick="optionsEvent"
+                        android:id="@+id/option_4_c"
+                        style="@style/CheckBoxMiddle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/option_4_c" />
+
+                    <CheckBox
+                        android:onClick="optionsEvent"
+                        android:id="@+id/option_4_d"
+                        style="@style/CheckBoxBottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/option_4_d" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayoutWrapperBottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/TextViewQuestions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_ques_fifth" />
+
+                <LinearLayout
+                    style="@style/LinearLayoutForOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <CheckBox
+                        android:onClick="optionsEvent"
+                        android:id="@+id/option_5_a"
+                        style="@style/CheckBoxTop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/option_5_a" />
+
+                    <CheckBox
+                        android:onClick="optionsEvent"
+                        android:id="@+id/option_5_b"
+                        style="@style/CheckBoxMiddle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/option_5_b" />
+
+                    <CheckBox
+                        android:onClick="optionsEvent"
+                        android:id="@+id/option_5_c"
+                        style="@style/CheckBoxMiddle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/option_5_c" />
+
+                    <CheckBox
+                        android:onClick="optionsEvent"
+                        android:id="@+id/option_5_d"
+                        style="@style/CheckBoxBottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/option_5_d" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/id_btn_show_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ButtonShowScore"
+                android:onClick="showScore"
+                android:text="@string/btn_txt_see_score" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
