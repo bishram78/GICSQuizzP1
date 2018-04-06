@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
 
         myToastLong(scoreText);
         myToastLong(getString(R.string.thanks_4_participate));
-        myToastLong(getString(R.string.visit_again));
+        myToastShort(getString(R.string.visit_again));
         btnQuizResult.setVisibility(View.GONE);
 
         sleep(10000);
