@@ -20,11 +20,11 @@ import java.lang.reflect.Field;
 
 public class MainActivity extends AppCompatActivity {
 
-    private CheckBox checkBoxOptionJan1, checkBoxOptionJan21, checkBoxOptionFeb7, checkBoxOptionFeb14;
-    private CheckBox checkBoxOption500, checkBoxOption1000, checkBoxOption350, checkBoxOption750;
-    private CheckBox checkBoxOption1M, checkBoxOption2M, checkBoxOption3M, checkBoxOption4M;
-    private CheckBox checkBoxOption5M, checkBoxOption6M, checkBoxOption7M, checkBoxOption8M;
-    private CheckBox checkBoxOptionKuKa, checkBoxOptionKuLy, checkBoxOptionKaLy, checkBoxOptionKuKaLy;
+    private CheckBox checkBoxOption1a, checkBoxOption1b, checkBoxOption1c, checkBoxOption1d;
+    private CheckBox checkBoxOption2a, checkBoxOption2b, checkBoxOption2c, checkBoxOption2d;
+    private CheckBox checkBoxOption3a, checkBoxOption3b, checkBoxOption3c, checkBoxOption3d;
+    private CheckBox checkBoxOption4a, checkBoxOption4b, checkBoxOption4c, checkBoxOption4d;
+    private CheckBox checkBoxOption5a, checkBoxOption5b, checkBoxOption5c, checkBoxOption5d;
     private Button btnQuizResult;
 
     private int totalScore = 0;
@@ -49,56 +49,56 @@ public class MainActivity extends AppCompatActivity {
             setContentView(R.layout.activity_home);
 
             findViewResources();
-            checkBoxOptionKuKa.setSelected(true);
-            checkBoxOptionKaLy.setSelected(true);
-            checkBoxOptionKuLy.setSelected(true);
-            checkBoxOptionKuKaLy.setSelected(true);
+            checkBoxOption5a.setSelected(true);
+            checkBoxOption5b.setSelected(true);
+            checkBoxOption5c.setSelected(true);
+            checkBoxOption5d.setSelected(true);
         }
     }
 
     public void findViewResources() {
         btnQuizResult = findViewById(R.id.id_btn_show_score);
 
-        checkBoxOptionJan1 = findViewById(R.id.option_1_a);
-        checkBoxOptionJan21 = findViewById(R.id.option_1_b);
-        checkBoxOptionFeb7 = findViewById(R.id.option_1_c);
-        checkBoxOptionFeb14 = findViewById(R.id.option_1_d);
-        checkBoxOption500 = findViewById(R.id.option_2_a);
-        checkBoxOption1000 = findViewById(R.id.option_2_b);
-        checkBoxOption350 = findViewById(R.id.option_2_c);
-        checkBoxOption750 = findViewById(R.id.option_2_d);
-        checkBoxOption1M = findViewById(R.id.option_3_a);
-        checkBoxOption2M = findViewById(R.id.option_3_b);
-        checkBoxOption3M = findViewById(R.id.option_3_c);
-        checkBoxOption4M = findViewById(R.id.option_3_d);
-        checkBoxOption5M = findViewById(R.id.option_4_a);
-        checkBoxOption6M = findViewById(R.id.option_4_b);
-        checkBoxOption7M = findViewById(R.id.option_4_c);
-        checkBoxOption8M = findViewById(R.id.option_4_d);
-        checkBoxOptionKuKa = findViewById(R.id.option_5_a);
-        checkBoxOptionKuLy = findViewById(R.id.option_5_b);
-        checkBoxOptionKaLy = findViewById(R.id.option_5_c);
-        checkBoxOptionKuKaLy = findViewById(R.id.option_5_d);
+        checkBoxOption1a = findViewById(R.id.option_1_a);
+        checkBoxOption1b = findViewById(R.id.option_1_b);
+        checkBoxOption1c = findViewById(R.id.option_1_c);
+        checkBoxOption1d = findViewById(R.id.option_1_d);
+        checkBoxOption2a = findViewById(R.id.option_2_a);
+        checkBoxOption2b = findViewById(R.id.option_2_b);
+        checkBoxOption2c = findViewById(R.id.option_2_c);
+        checkBoxOption2d = findViewById(R.id.option_2_d);
+        checkBoxOption3a = findViewById(R.id.option_3_a);
+        checkBoxOption3b = findViewById(R.id.option_3_b);
+        checkBoxOption3c = findViewById(R.id.option_3_c);
+        checkBoxOption3d = findViewById(R.id.option_3_d);
+        checkBoxOption4a = findViewById(R.id.option_4_a);
+        checkBoxOption4b = findViewById(R.id.option_4_b);
+        checkBoxOption4c = findViewById(R.id.option_4_c);
+        checkBoxOption4d = findViewById(R.id.option_4_d);
+        checkBoxOption5a = findViewById(R.id.option_5_a);
+        checkBoxOption5b = findViewById(R.id.option_5_b);
+        checkBoxOption5c = findViewById(R.id.option_5_c);
+        checkBoxOption5d = findViewById(R.id.option_5_d);
     }
 
     /**
      * This method will calculate Total Score of Quiz.
      */
     protected int calculateScore() {
-        if (checkBoxOptionFeb14.isChecked())
-            totalScore += 1;
+        if (checkBoxOption1d.isChecked())
+            totalScore += 2;
 
-        if (checkBoxOption500.isChecked())
-            totalScore += 1;
+        if (checkBoxOption2a.isChecked())
+            totalScore += 2;
 
-        if (checkBoxOption3M.isChecked())
-            totalScore += 1;
+        if (checkBoxOption3c.isChecked())
+            totalScore += 2;
 
-        if (checkBoxOption6M.isChecked())
-            totalScore += 1;
+        if (checkBoxOption4b.isChecked())
+            totalScore += 2;
 
-        if (checkBoxOptionKuKaLy.isChecked())
-            totalScore += 1;
+        if (checkBoxOption5d.isChecked())
+            totalScore += 2;
 
         return totalScore;
     }
@@ -108,15 +108,15 @@ public class MainActivity extends AppCompatActivity {
     public void showScore(View view) {
         totalScore = calculateScore();
         String scoreText = "";
-        if (totalScore == 5)
+        if (totalScore == 10)
             scoreText = resources.getString(R.string.text_total_score, getString(R.string.extraordinary), totalScore);
-        else if (totalScore == 4)
+        else if (totalScore == 8)
             scoreText = resources.getString(R.string.text_total_score, getString(R.string.excellent), totalScore);
-        else if (totalScore == 3)
+        else if (totalScore == 6)
             scoreText = resources.getString(R.string.text_total_score, getString(R.string.very_good), totalScore);
-        else if (totalScore == 2)
+        else if (totalScore == 4)
             scoreText = resources.getString(R.string.text_total_score, getString(R.string.good), totalScore);
-        else if (totalScore == 1)
+        else if (totalScore == 2)
             scoreText = resources.getString(R.string.text_total_score, getString(R.string.hmm), totalScore);
         else if (totalScore == 0)
             scoreText = resources.getString(R.string.text_total_score, getString(R.string.ops), totalScore);
@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
         myToastLong(getString(R.string.thanks_4_participate));
         myToastShort(getString(R.string.visit_again));
         btnQuizResult.setBackgroundResource(R.drawable.button_selector_disabled);
-        btnQuizResult.setTextColor(getResources().getColor(R.color.colorPrimary));
+        btnQuizResult.setTextColor(resources.getColor(R.color.colorPrimary));
         btnQuizResult.setEnabled(false);
 
         sleep(10000);
@@ -137,140 +137,140 @@ public class MainActivity extends AppCompatActivity {
     public void optionsEvent(View view) {
         switch (view.getId()) {
             case R.id.option_1_a:
-                quesOneEnableCheck(false, true, true, true, true, false, false, false);
+                quesOneClickableCheck(false, true, true, true, true, false, false, false);
                 break;
 
             case R.id.option_1_b:
-                quesOneEnableCheck(true, false, true, true, false, true, false, false);
+                quesOneClickableCheck(true, false, true, true, false, true, false, false);
                 break;
 
             case R.id.option_1_c:
-                quesOneEnableCheck(true, true, false, true, false, false, true, false);
+                quesOneClickableCheck(true, true, false, true, false, false, true, false);
                 break;
 
             case R.id.option_1_d:
-                quesOneEnableCheck(true, true, true, false, false, false, false, true);
+                quesOneClickableCheck(true, true, true, false, false, false, false, true);
                 break;
 
             case R.id.option_2_a:
-                quesTwoEnableCheck(false, true, true, true, true, false, false, false);
+                quesTwoClickableCheck(false, true, true, true, true, false, false, false);
                 break;
 
             case R.id.option_2_b:
-                quesTwoEnableCheck(true, false, true, true, false, true, false, false);
+                quesTwoClickableCheck(true, false, true, true, false, true, false, false);
                 break;
 
             case R.id.option_2_c:
-                quesTwoEnableCheck(true, true, false, true, false, false, true, false);
+                quesTwoClickableCheck(true, true, false, true, false, false, true, false);
                 break;
 
             case R.id.option_2_d:
-                quesTwoEnableCheck(true, true, true, false, false, false, false, true);
+                quesTwoClickableCheck(true, true, true, false, false, false, false, true);
                 break;
 
             case R.id.option_3_a:
-                quesThreeEnableCheck(false, true, true, true, true, false, false, false);
+                quesThreeClickableCheck(false, true, true, true, true, false, false, false);
                 break;
 
             case R.id.option_3_b:
-                quesThreeEnableCheck(true, false, true, true, false, true, false, false);
+                quesThreeClickableCheck(true, false, true, true, false, true, false, false);
                 break;
 
             case R.id.option_3_c:
-                quesThreeEnableCheck(true, true, false, true, false, false, true, false);
+                quesThreeClickableCheck(true, true, false, true, false, false, true, false);
                 break;
 
             case R.id.option_3_d:
-                quesThreeEnableCheck(true, true, true, false, false, false, false, true);
+                quesThreeClickableCheck(true, true, true, false, false, false, false, true);
                 break;
 
             case R.id.option_4_a:
-                quesFourEnableCheck(false, true, true, true, true, false, false, false);
+                quesFourClickableCheck(false, true, true, true, true, false, false, false);
                 break;
 
             case R.id.option_4_b:
-                quesFourEnableCheck(true, false, true, true, false, true, false, false);
+                quesFourClickableCheck(true, false, true, true, false, true, false, false);
                 break;
 
             case R.id.option_4_c:
-                quesFourEnableCheck(true, true, false, true, false, false, true, false);
+                quesFourClickableCheck(true, true, false, true, false, false, true, false);
                 break;
 
             case R.id.option_4_d:
-                quesFourEnableCheck(true, true, true, false, false, false, false, true);
+                quesFourClickableCheck(true, true, true, false, false, false, false, true);
                 break;
 
             case R.id.option_5_a:
-                quesFiveEnableCheck(false, true, true, true, true, false, false, false);
+                quesFiveClickableCheck(false, true, true, true, true, false, false, false);
                 break;
 
             case R.id.option_5_b:
-                quesFiveEnableCheck(true, false, true, true, false, true, false, false);
+                quesFiveClickableCheck(true, false, true, true, false, true, false, false);
                 break;
 
             case R.id.option_5_c:
-                quesFiveEnableCheck(true, true, false, true, false, false, true, false);
+                quesFiveClickableCheck(true, true, false, true, false, false, true, false);
                 break;
 
             case R.id.option_5_d:
-                quesFiveEnableCheck(true, true, true, false, false, false, false, true);
+                quesFiveClickableCheck(true, true, true, false, false, false, false, true);
                 break;
         }
     }
 
-    public void quesOneEnableCheck(boolean mEnable1, boolean mEnable2, boolean mEnable3, boolean mEnable4, boolean mCheck1, boolean mCheck2, boolean mCheck3, boolean mCheck4) {
-        checkBoxOptionJan1.setEnabled(mEnable1);
-        checkBoxOptionJan21.setEnabled(mEnable2);
-        checkBoxOptionFeb7.setEnabled(mEnable3);
-        checkBoxOptionFeb14.setEnabled(mEnable4);
-        checkBoxOptionJan1.setChecked(mCheck1);
-        checkBoxOptionJan21.setChecked(mCheck2);
-        checkBoxOptionFeb7.setChecked(mCheck3);
-        checkBoxOptionFeb14.setChecked(mCheck4);
+    public void quesOneClickableCheck(boolean mClickable1, boolean mClickable2, boolean mClickable3, boolean mClickable4, boolean mCheck1, boolean mCheck2, boolean mCheck3, boolean mCheck4) {
+        checkBoxOption1a.setClickable(mClickable1);
+        checkBoxOption1b.setClickable(mClickable2);
+        checkBoxOption1c.setClickable(mClickable3);
+        checkBoxOption1d.setClickable(mClickable4);
+        checkBoxOption1a.setChecked(mCheck1);
+        checkBoxOption1b.setChecked(mCheck2);
+        checkBoxOption1c.setChecked(mCheck3);
+        checkBoxOption1d.setChecked(mCheck4);
     }
 
-    public void quesTwoEnableCheck(boolean mEnable1, boolean mEnable2, boolean mEnable3, boolean mEnable4, boolean mCheck1, boolean mCheck2, boolean mCheck3, boolean mCheck4) {
-        checkBoxOption500.setEnabled(mEnable1);
-        checkBoxOption1000.setEnabled(mEnable2);
-        checkBoxOption350.setEnabled(mEnable3);
-        checkBoxOption750.setEnabled(mEnable4);
-        checkBoxOption500.setChecked(mCheck1);
-        checkBoxOption1000.setChecked(mCheck2);
-        checkBoxOption350.setChecked(mCheck3);
-        checkBoxOption750.setChecked(mCheck4);
+    public void quesTwoClickableCheck(boolean mClickable1, boolean mClickable2, boolean mClickable3, boolean mClickable4, boolean mCheck1, boolean mCheck2, boolean mCheck3, boolean mCheck4) {
+        checkBoxOption2a.setClickable(mClickable1);
+        checkBoxOption2b.setClickable(mClickable2);
+        checkBoxOption2c.setClickable(mClickable3);
+        checkBoxOption2d.setClickable(mClickable4);
+        checkBoxOption2a.setChecked(mCheck1);
+        checkBoxOption2b.setChecked(mCheck2);
+        checkBoxOption2c.setChecked(mCheck3);
+        checkBoxOption2d.setChecked(mCheck4);
     }
 
-    public void quesThreeEnableCheck(boolean mEnable1, boolean mEnable2, boolean mEnable3, boolean mEnable4, boolean mCheck1, boolean mCheck2, boolean mCheck3, boolean mCheck4) {
-        checkBoxOption1M.setEnabled(mEnable1);
-        checkBoxOption2M.setEnabled(mEnable2);
-        checkBoxOption3M.setEnabled(mEnable3);
-        checkBoxOption4M.setEnabled(mEnable4);
-        checkBoxOption1M.setChecked(mCheck1);
-        checkBoxOption2M.setChecked(mCheck2);
-        checkBoxOption3M.setChecked(mCheck3);
-        checkBoxOption4M.setChecked(mCheck4);
+    public void quesThreeClickableCheck(boolean mClickable1, boolean mClickable2, boolean mClickable3, boolean mClickable4, boolean mCheck1, boolean mCheck2, boolean mCheck3, boolean mCheck4) {
+        checkBoxOption3a.setClickable(mClickable1);
+        checkBoxOption3b.setClickable(mClickable2);
+        checkBoxOption3c.setClickable(mClickable3);
+        checkBoxOption3d.setClickable(mClickable4);
+        checkBoxOption3a.setChecked(mCheck1);
+        checkBoxOption3b.setChecked(mCheck2);
+        checkBoxOption3c.setChecked(mCheck3);
+        checkBoxOption3d.setChecked(mCheck4);
     }
 
-    public void quesFourEnableCheck(boolean mEnable1, boolean mEnable2, boolean mEnable3, boolean mEnable4, boolean mCheck1, boolean mCheck2, boolean mCheck3, boolean mCheck4) {
-        checkBoxOption5M.setEnabled(mEnable1);
-        checkBoxOption6M.setEnabled(mEnable2);
-        checkBoxOption7M.setEnabled(mEnable3);
-        checkBoxOption8M.setEnabled(mEnable4);
-        checkBoxOption5M.setChecked(mCheck1);
-        checkBoxOption6M.setChecked(mCheck2);
-        checkBoxOption7M.setChecked(mCheck3);
-        checkBoxOption8M.setChecked(mCheck4);
+    public void quesFourClickableCheck(boolean mClickable1, boolean mClickable2, boolean mClickable3, boolean mClickable4, boolean mCheck1, boolean mCheck2, boolean mCheck3, boolean mCheck4) {
+        checkBoxOption4a.setClickable(mClickable1);
+        checkBoxOption4b.setClickable(mClickable2);
+        checkBoxOption4c.setClickable(mClickable3);
+        checkBoxOption4d.setClickable(mClickable4);
+        checkBoxOption4a.setChecked(mCheck1);
+        checkBoxOption4b.setChecked(mCheck2);
+        checkBoxOption4c.setChecked(mCheck3);
+        checkBoxOption4d.setChecked(mCheck4);
     }
 
-    public void quesFiveEnableCheck(boolean mEnable1, boolean mEnable2, boolean mEnable3, boolean mEnable4, boolean mCheck1, boolean mCheck2, boolean mCheck3, boolean mCheck4) {
-        checkBoxOptionKuKa.setEnabled(mEnable1);
-        checkBoxOptionKuLy.setEnabled(mEnable2);
-        checkBoxOptionKaLy.setEnabled(mEnable3);
-        checkBoxOptionKuKaLy.setEnabled(mEnable4);
-        checkBoxOptionKuKa.setChecked(mCheck1);
-        checkBoxOptionKuLy.setChecked(mCheck2);
-        checkBoxOptionKaLy.setChecked(mCheck3);
-        checkBoxOptionKuKaLy.setChecked(mCheck4);
+    public void quesFiveClickableCheck(boolean mClickable1, boolean mClickable2, boolean mClickable3, boolean mClickable4, boolean mCheck1, boolean mCheck2, boolean mCheck3, boolean mCheck4) {
+        checkBoxOption5a.setClickable(mClickable1);
+        checkBoxOption5b.setClickable(mClickable2);
+        checkBoxOption5c.setClickable(mClickable3);
+        checkBoxOption5d.setClickable(mClickable4);
+        checkBoxOption5a.setChecked(mCheck1);
+        checkBoxOption5b.setChecked(mCheck2);
+        checkBoxOption5c.setChecked(mCheck3);
+        checkBoxOption5d.setChecked(mCheck4);
     }
 
     /**
