@@ -2,7 +2,9 @@ package com.example.bishram.gicsquizz;
 
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.os.Handler;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
@@ -122,7 +124,9 @@ public class MainActivity extends AppCompatActivity {
         myToastLong(scoreText);
         myToastLong(getString(R.string.thanks_4_participate));
         myToastShort(getString(R.string.visit_again));
-        btnQuizResult.setVisibility(View.GONE);
+        btnQuizResult.setBackgroundResource(R.drawable.button_selector_disabled);
+        btnQuizResult.setTextColor(getResources().getColor(R.color.colorPrimary));
+        btnQuizResult.setEnabled(false);
 
         sleep(10000);
         }

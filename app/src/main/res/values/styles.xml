@@ -61,12 +61,10 @@
 
     <style name="TextViewQuestions">
         <item name="android:background">@color/colorBlack175</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
         <item name="android:gravity">left|start</item>
         <item name="android:padding">@dimen/margin_padding_16dp</item>
         <item name="android:textColor">@color/colorWhite</item>
-        <item name="android:textSize">@dimen/text_size_24sp</item>
-        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/text_size_18sp</item>
     </style>
 
     <style name="CheckBoxMain">

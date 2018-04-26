@@ -7,4 +7,6 @@
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBlack">#000000</color>
     <color name="colorBlack175">#AF000000</color>
+    <color name="colorButtonDisabled">#C293FD</color>
+    <color name="colorButtonEnabled">#E1A35AFF</color>
 </resources>
