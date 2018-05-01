@@ -7,21 +7,26 @@
     <string name="java_txt_error_missing">One of your question is missing.\nPlease make sure that you have ticked all question.</string>
 
     <!--Question number one-->
-    <string name="text_ques_first">When was the Course of Google India Challenge Scholarship 2018 started?</string>
+    <string name="text_ques_first">Q.1 From the four options given below, what is <b>Android</b>?</string>
+    <string name="text_ques_first_test">When was the Course of Google India Challenge Scholarship 2018 started?</string>
 
     <!--Question number two-->
-    <string name="text_ques_second">How many students will be selected for Phase 2 only from Android Developer track?</string>
+    <string name="text_ques_second">Q.2 What does <b>ADB</b> stands for in the Android system?</string>
+    <string name="text_ques_second_test">How many students will be selected for Phase 2 only from Android Developer track?</string>
 
     <!--Question number three-->
-    <string name="text_ques_third">How much time is allocated for the Google India Challenge Scholarship: Android Basics Program?</string>
+    <string name="text_ques_third">Q.3 The default text size of the Android <b>EditText</b> is?</string>
+    <string name="text_ques_third_test">How much time is allocated for the Google India Challenge Scholarship: Android Basics Program?</string>
 
     <!--Question number four-->
-    <string name="text_ques_fourth">How much time is allocated for the Google India Challenge Scholarship: Android Basics Nanodegree Program?</string>
+    <string name="text_ques_fourth">Q.4 Which of the following is not the attribute of <b>TextView</b> tag?</string>
+    <string name="text_ques_fourth_test">How much time is allocated for the Google India Challenge Scholarship: Android Basics Nanodegree Program?</string>
 
     <!--Question number five-->
-    <string name="text_ques_fifth">What are the instructors\' names of Google India Challenge Scholarship: Android Basics Course?</string>
+    <string name="text_ques_fifth">Q.5 What are the basic <b>tools</b> used to develop an android app?</string>
+    <string name="text_ques_fifth_test">What are the instructors\' names of Google India Challenge Scholarship: Android Basics Course?</string>
 
-    <string name="text_total_score">%1$s \nYour total score is %2$d/5.</string>
+    <string name="text_total_score">%1$s \nYour total score is %2$d/%3$d.</string>
     <string name="thanks_4_participate">Thanks for participating in quiz.</string>
     <string name="visit_again">Please visit again.</string>
     <string name="extraordinary">Extraordinary.</string>
@@ -31,28 +36,53 @@
     <string name="hmm">Hmm!</string>
     <string name="ops">Ops!</string>
 
-    <string name="option_1_a">January 1</string>
-    <string name="option_1_b">January 21</string>
-    <string name="option_1_c">February 7</string>
-    <string name="option_1_d">February 14</string>
+    <string name="option_1_a">Application</string>
+    <string name="option_1_b">Smart Phone</string>
+    <string name="option_1_c">Programming Language</string>
+    <string name="option_1_d">Operating System</string>
 
-    <string name="option_2_a">500 Students</string>
-    <string name="option_2_b">1000 Students</string>
-    <string name="option_2_c">350 Students</string>
-    <string name="option_2_d">750 Students</string>
+    <string name="option_1_a_test">January 1</string>
+    <string name="option_1_b_test">January 21</string>
+    <string name="option_1_c_test">February 7</string>
+    <string name="option_1_d_test">February 14</string>
 
-    <string name="option_3_a">1 Month</string>
-    <string name="option_3_b">2 Months</string>
-    <string name="option_3_c">3 Months</string>
-    <string name="option_3_d">4 Months</string>
+    <string name="option_2_a">Android Debug Bridge</string>
+    <string name="option_2_b">Android Debug Board</string>
+    <string name="option_2_c">Android Deluxe Bridge</string>
+    <string name="option_2_d">None of these</string>
 
-    <string name="option_4_a">5 Months</string>
-    <string name="option_4_b">6 Months</string>
-    <string name="option_4_c">7 Months</string>
-    <string name="option_4_d">8 Months</string>
+    <string name="option_2_a_test">500 Students</string>
+    <string name="option_2_b_test">1000 Students</string>
+    <string name="option_2_c_test">350 Students</string>
+    <string name="option_2_d_test">750 Students</string>
 
-    <string name="option_5_a">Kunal Chawla &amp; Katherine Kuan</string>
-    <string name="option_5_b">Kunal Chawla &amp; Lyla Fujiwara</string>
-    <string name="option_5_c">Katherine Kuan &amp; Lyla Fujiwara</string>
-    <string name="option_5_d">Kunal Chawla, Katherine Kuan &amp; Lyla Fujiwara</string>
+    <string name="option_3_a">14dp</string>
+    <string name="option_3_b">16dp</string>
+    <string name="option_3_c">18dp</string>
+    <string name="option_3_d">20dp</string>
+
+    <string name="option_3_a_test">1 Month</string>
+    <string name="option_3_b_test">2 Months</string>
+    <string name="option_3_c_test">3 Months</string>
+    <string name="option_3_d_test">4 Months</string>
+
+    <string name="option_4_a">android:id</string>
+    <string name="option_4_b">android:hint</string>
+    <string name="option_4_c">android:gravity</string>
+    <string name="option_4_d">android:text</string>
+
+    <string name="option_4_a_test">5 Months</string>
+    <string name="option_4_b_test">6 Months</string>
+    <string name="option_4_c_test">7 Months</string>
+    <string name="option_4_d_test">8 Months</string>
+
+    <string name="option_5_a">JDK</string>
+    <string name="option_5_b">ADT plugin</string>
+    <string name="option_5_c">SDK Tools</string>
+    <string name="option_5_d">All of these</string>
+
+    <string name="option_5_a_test">Kunal Chawla &amp; Katherine Kuan</string>
+    <string name="option_5_b_test">Kunal Chawla &amp; Lyla Fujiwara</string>
+    <string name="option_5_c_test">Katherine Kuan &amp; Lyla Fujiwara</string>
+    <string name="option_5_d_test">Kunal Chawla, Katherine Kuan &amp; Lyla Fujiwara</string>
 </resources>

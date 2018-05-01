@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    android:scrollbars="none"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    android:scrollbars="none">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="240dp"
+            android:layout_height="@dimen/rl_container_height"
             android:layout_marginEnd="@dimen/margin_padding_16dp"
             android:layout_marginStart="@dimen/margin_padding_16dp"
             android:layout_marginTop="@dimen/margin_padding_16dp">
@@ -36,10 +36,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#DD000000"
+                    android:lines="3"
                     android:padding="@dimen/margin_padding_12dp"
                     android:text="@string/text_ques_first"
                     android:textColor="@color/colorWhite"
-                    android:lines="3"
                     android:textSize="@dimen/text_size_18sp"
                     app:fontFamily="sans-serif-condensed" />
 
@@ -57,8 +57,8 @@
                     android:id="@+id/option_1_b"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginStart="@dimen/margin_padding_8dp"
+                    android:layout_weight="1"
                     android:onClick="optionsEvent"
                     android:text="@string/option_1_b" />
 
@@ -75,8 +75,8 @@
                     android:id="@+id/option_1_d"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
                     android:layout_marginBottom="@dimen/margin_padding_16dp"
+                    android:layout_marginStart="@dimen/margin_padding_8dp"
                     android:layout_weight="1"
                     android:onClick="optionsEvent"
                     android:text="@string/option_1_d" />
@@ -85,7 +85,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="240dp"
+            android:layout_height="@dimen/rl_container_height"
             android:layout_marginEnd="@dimen/margin_padding_16dp"
             android:layout_marginStart="@dimen/margin_padding_16dp"
             android:layout_marginTop="@dimen/margin_padding_16dp">
@@ -107,10 +107,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#DD000000"
+                    android:lines="3"
                     android:padding="@dimen/margin_padding_12dp"
                     android:text="@string/text_ques_second"
                     android:textColor="@color/colorWhite"
-                    android:lines="3"
                     android:textSize="@dimen/text_size_18sp"
                     app:fontFamily="sans-serif-condensed" />
 
@@ -128,8 +128,8 @@
                     android:id="@+id/option_2_b"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginStart="@dimen/margin_padding_8dp"
+                    android:layout_weight="1"
                     android:onClick="optionsEvent"
                     android:text="@string/option_2_b" />
 
@@ -137,8 +137,8 @@
                     android:id="@+id/option_2_c"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginStart="@dimen/margin_padding_8dp"
+                    android:layout_weight="1"
                     android:onClick="optionsEvent"
                     android:text="@string/option_2_c" />
 
@@ -146,8 +146,8 @@
                     android:id="@+id/option_2_d"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
                     android:layout_marginBottom="@dimen/margin_padding_16dp"
+                    android:layout_marginStart="@dimen/margin_padding_8dp"
                     android:layout_weight="1"
                     android:onClick="optionsEvent"
                     android:text="@string/option_2_d" />
@@ -156,7 +156,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="240dp"
+            android:layout_height="@dimen/rl_container_height"
             android:layout_marginEnd="@dimen/margin_padding_16dp"
             android:layout_marginStart="@dimen/margin_padding_16dp"
             android:layout_marginTop="@dimen/margin_padding_16dp">
@@ -178,10 +178,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#DD000000"
+                    android:lines="3"
                     android:padding="@dimen/margin_padding_12dp"
                     android:text="@string/text_ques_third"
                     android:textColor="@color/colorWhite"
-                    android:lines="3"
                     android:textSize="@dimen/text_size_18sp"
                     app:fontFamily="sans-serif-condensed" />
 
@@ -199,8 +199,8 @@
                     android:id="@+id/option_3_b"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginStart="@dimen/margin_padding_8dp"
+                    android:layout_weight="1"
                     android:onClick="optionsEvent"
                     android:text="@string/option_3_b" />
 
@@ -208,8 +208,8 @@
                     android:id="@+id/option_3_c"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginStart="@dimen/margin_padding_8dp"
+                    android:layout_weight="1"
                     android:onClick="optionsEvent"
                     android:text="@string/option_3_c" />
 
@@ -217,8 +217,8 @@
                     android:id="@+id/option_3_d"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
                     android:layout_marginBottom="@dimen/margin_padding_16dp"
+                    android:layout_marginStart="@dimen/margin_padding_8dp"
                     android:layout_weight="1"
                     android:onClick="optionsEvent"
                     android:text="@string/option_3_d" />
@@ -227,7 +227,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="240dp"
+            android:layout_height="@dimen/rl_container_height"
             android:layout_marginEnd="@dimen/margin_padding_16dp"
             android:layout_marginStart="@dimen/margin_padding_16dp"
             android:layout_marginTop="@dimen/margin_padding_16dp">
@@ -249,10 +249,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#DD000000"
+                    android:lines="3"
                     android:padding="@dimen/margin_padding_12dp"
                     android:text="@string/text_ques_fourth"
                     android:textColor="@color/colorWhite"
-                    android:lines="3"
                     android:textSize="@dimen/text_size_18sp"
                     app:fontFamily="sans-serif-condensed" />
 
@@ -270,8 +270,8 @@
                     android:id="@+id/option_4_b"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginStart="@dimen/margin_padding_8dp"
+                    android:layout_weight="1"
                     android:onClick="optionsEvent"
                     android:text="@string/option_4_b" />
 
@@ -279,8 +279,8 @@
                     android:id="@+id/option_4_c"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginStart="@dimen/margin_padding_8dp"
+                    android:layout_weight="1"
                     android:onClick="optionsEvent"
                     android:text="@string/option_4_c" />
 
@@ -288,8 +288,8 @@
                     android:id="@+id/option_4_d"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
                     android:layout_marginBottom="@dimen/margin_padding_16dp"
+                    android:layout_marginStart="@dimen/margin_padding_8dp"
                     android:layout_weight="1"
                     android:onClick="optionsEvent"
                     android:text="@string/option_4_d" />
@@ -298,7 +298,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="240dp"
+            android:layout_height="@dimen/rl_container_height"
             android:layout_marginEnd="@dimen/margin_padding_16dp"
             android:layout_marginStart="@dimen/margin_padding_16dp"
             android:layout_marginTop="@dimen/margin_padding_16dp">
@@ -320,10 +320,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#DD000000"
+                    android:lines="3"
                     android:padding="@dimen/margin_padding_12dp"
                     android:text="@string/text_ques_fifth"
                     android:textColor="@color/colorWhite"
-                    android:lines="3"
                     android:textSize="@dimen/text_size_18sp"
                     app:fontFamily="sans-serif-condensed" />
 
@@ -341,8 +341,8 @@
                     android:id="@+id/option_5_b"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginStart="@dimen/margin_padding_8dp"
+                    android:layout_weight="1"
                     android:onClick="optionsEvent"
                     android:text="@string/option_5_b" />
 
@@ -350,8 +350,8 @@
                     android:id="@+id/option_5_c"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginStart="@dimen/margin_padding_8dp"
+                    android:layout_weight="1"
                     android:onClick="optionsEvent"
                     android:text="@string/option_5_c" />
 
@@ -359,8 +359,8 @@
                     android:id="@+id/option_5_d"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
                     android:layout_marginBottom="@dimen/margin_padding_16dp"
+                    android:layout_marginStart="@dimen/margin_padding_8dp"
                     android:layout_weight="1"
                     android:onClick="optionsEvent"
                     android:text="@string/option_5_d" />
@@ -372,10 +372,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
+            android:background="@drawable/button_selector_enabled"
             android:onClick="showScore"
             android:padding="@dimen/margin_padding_16dp"
             android:text="@string/btn_txt_see_score"
-            android:background="@drawable/button_selector_enabled"
             android:textColor="@color/colorWhite"
             android:textStyle="bold" />
     </LinearLayout>

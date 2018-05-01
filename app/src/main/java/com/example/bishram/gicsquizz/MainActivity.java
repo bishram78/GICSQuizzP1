@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
     private CheckBox checkBoxOption4a, checkBoxOption4b, checkBoxOption4c, checkBoxOption4d;
     private CheckBox checkBoxOption5a, checkBoxOption5b, checkBoxOption5c, checkBoxOption5d;
     private Button btnQuizResult;
-
     private int totalScore = 0;
     Resources resources;
 
@@ -107,19 +106,20 @@ public class MainActivity extends AppCompatActivity {
      */
     public void showScore(View view) {
         totalScore = calculateScore();
+        int MAXSCORE = 10;
         String scoreText = "";
         if (totalScore == 10)
-            scoreText = resources.getString(R.string.text_total_score, getString(R.string.extraordinary), totalScore);
+            scoreText = resources.getString(R.string.text_total_score, getString(R.string.extraordinary), totalScore, MAXSCORE);
         else if (totalScore == 8)
-            scoreText = resources.getString(R.string.text_total_score, getString(R.string.excellent), totalScore);
+            scoreText = resources.getString(R.string.text_total_score, getString(R.string.excellent), totalScore, MAXSCORE);
         else if (totalScore == 6)
-            scoreText = resources.getString(R.string.text_total_score, getString(R.string.very_good), totalScore);
+            scoreText = resources.getString(R.string.text_total_score, getString(R.string.very_good), totalScore, MAXSCORE);
         else if (totalScore == 4)
-            scoreText = resources.getString(R.string.text_total_score, getString(R.string.good), totalScore);
+            scoreText = resources.getString(R.string.text_total_score, getString(R.string.good), totalScore, MAXSCORE);
         else if (totalScore == 2)
-            scoreText = resources.getString(R.string.text_total_score, getString(R.string.hmm), totalScore);
+            scoreText = resources.getString(R.string.text_total_score, getString(R.string.hmm), totalScore, MAXSCORE);
         else if (totalScore == 0)
-            scoreText = resources.getString(R.string.text_total_score, getString(R.string.ops), totalScore);
+            scoreText = resources.getString(R.string.text_total_score, getString(R.string.ops), totalScore, MAXSCORE);
 
         myToastLong(scoreText);
         myToastLong(getString(R.string.thanks_4_participate));
