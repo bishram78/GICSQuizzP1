@@ -9,4 +9,5 @@
     <color name="colorBlack175">#AF000000</color>
     <color name="colorButtonDisabled">#C293FD</color>
     <color name="colorButtonEnabled">#E1A35AFF</color>
+    <color name="colorTextBackground">#CC0000000</color>
 </resources>
