@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method called when SHOW SCORE button is clicked
      */
-    public void showScore(View view) {
+    public void quizResultButton(View view) {
         totalScore = calculateScore();
         int MAXSCORE = 10;
         String scoreText = "";
