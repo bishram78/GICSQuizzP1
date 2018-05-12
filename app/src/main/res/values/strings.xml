@@ -11,19 +11,19 @@
     <string name="text_ques_first_test">When was the Course of Google India Challenge Scholarship 2018 started?</string>
 
     <!--Question number two-->
-    <string name="text_ques_second">Question: 2 of 8\nWhat does <b>ADB</b> stands for in the Android system?</string>
+    <string name="text_ques_second"><i>Question: 2 of 8</i>\nWhat does <b>ADB</b> stands for in the Android system?</string>
     <string name="text_ques_second_test">How many students will be selected for Phase 2 only from Android Developer track?</string>
 
     <!--Question number three-->
-    <string name="text_ques_third">Question: 1 of 8\nThe default text size of the Android <b>EditText</b> is?</string>
+    <string name="text_ques_third"><i>Question: 3 of 8</i>\nThe default text size of the Android <b>EditText</b> is?</string>
     <string name="text_ques_third_test">How much time is allocated for the Google India Challenge Scholarship: Android Basics Program?</string>
 
     <!--Question number four-->
-    <string name="text_ques_fourth">Question: 1 of 8\nWhich of the following is not the attribute of <b>TextView</b> tag?</string>
+    <string name="text_ques_fourth"><i>Question: 4 of 8</i>\nWhich of the following is not the attribute of <b>TextView</b> tag?</string>
     <string name="text_ques_fourth_test">How much time is allocated for the Google India Challenge Scholarship: Android Basics Nanodegree Program?</string>
 
     <!--Question number five-->
-    <string name="text_ques_fifth">Question: 1 of 8\nWhat are the basic <b>tools</b> used to develop an android app?</string>
+    <string name="text_ques_fifth"><i>Question: 5 of 8</i>\nWhat are the basic <b>tools</b> used to develop an android app?</string>
     <string name="text_ques_fifth_test">What are the instructors\' names of Google India Challenge Scholarship: Android Basics Course?</string>
 
     <string name="text_total_score">%1$s \nYour total score is %2$d/%3$d.</string>
