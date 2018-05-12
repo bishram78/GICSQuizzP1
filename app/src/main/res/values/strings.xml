@@ -3,7 +3,7 @@
     <string name="main_activity_toolbar_title">Google IC Scholarship Quizzz</string>
 
     <!--Button name to show score and result of the Quiz-->
-    <string name="btn_txt_see_score">Quiz Result</string>
+    <string name="btn_txt_quiz_result">Quiz Result</string>
     <string name="java_txt_error_missing">One of your question is missing.\nPlease make sure that you have ticked all question.</string>
 
     <!--Question number one-->
