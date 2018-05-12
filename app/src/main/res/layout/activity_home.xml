@@ -10,104 +10,68 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="@dimen/margin_padding_24dp">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/rl_container_height"
-            android:layout_marginEnd="@dimen/margin_padding_16dp"
-            android:layout_marginStart="@dimen/margin_padding_16dp"
-            android:layout_marginTop="@dimen/margin_padding_16dp">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#55eccd34">
 
-            <ImageView
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:contentDescription="@string/app_name"
-                android:scaleType="centerCrop"
-                android:src="@drawable/google_scholarship_india_badge_hd" />
+                android:layout_height="wrap_content"
+                android:background="@color/colorTextBackground"
+                android:padding="@dimen/margin_padding_12dp"
+                android:text="@string/text_ques_first"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_18sp"
+                app:fontFamily="sans-serif-condensed" />
+
+            <CheckBox
+                android:id="@+id/option_1_a"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick="optionsEvent"
+                android:text="@string/option_1_a" />
+
+            <CheckBox
+                android:id="@+id/option_1_b"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick="optionsEvent"
+                android:text="@string/option_1_b" />
+
+            <CheckBox
+                android:id="@+id/option_1_c"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick="optionsEvent"
+                android:text="@string/option_1_c" />
+
+            <CheckBox
+                android:id="@+id/option_1_d"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick="optionsEvent"
+                android:text="@string/option_1_d" />
+        </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/border_for_options"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:background="#55eccd34">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/colorTextBackground"
-                    android:lines="3"
-                    android:padding="@dimen/margin_padding_12dp"
-                    android:text="@string/text_ques_first"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="@dimen/text_size_18sp"
-                    app:fontFamily="sans-serif-condensed" />
-
-                <CheckBox
-                    android:id="@+id/option_1_a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
-                    android:layout_marginTop="@dimen/margin_padding_16dp"
-                    android:layout_weight="1"
-                    android:onClick="optionsEvent"
-                    android:text="@string/option_1_a" />
-
-                <CheckBox
-                    android:id="@+id/option_1_b"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
-                    android:layout_weight="1"
-                    android:onClick="optionsEvent"
-                    android:text="@string/option_1_b" />
-
-                <CheckBox
-                    android:id="@+id/option_1_c"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
-                    android:layout_weight="1"
-                    android:onClick="optionsEvent"
-                    android:text="@string/option_1_c" />
-
-                <CheckBox
-                    android:id="@+id/option_1_d"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_marginBottom="@dimen/margin_padding_16dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
-                    android:layout_weight="1"
-                    android:onClick="optionsEvent"
-                    android:text="@string/option_1_d" />
-            </LinearLayout>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/rl_container_height"
-            android:layout_marginEnd="@dimen/margin_padding_16dp"
-            android:layout_marginStart="@dimen/margin_padding_16dp"
-            android:layout_marginTop="@dimen/margin_padding_16dp">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:contentDescription="@string/app_name"
-                android:scaleType="centerCrop"
-                android:src="@drawable/google_scholarship_india_badge_hd" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/border_for_options"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorTextBackground"
-                    android:lines="3"
                     android:padding="@dimen/margin_padding_12dp"
                     android:text="@string/text_ques_second"
                     android:textColor="@color/colorWhite"
@@ -116,7 +80,7 @@
 
                 <CheckBox
                     android:id="@+id/option_2_a"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_marginStart="@dimen/margin_padding_8dp"
                     android:layout_marginTop="@dimen/margin_padding_16dp"
@@ -126,7 +90,7 @@
 
                 <CheckBox
                     android:id="@+id/option_2_b"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_marginStart="@dimen/margin_padding_8dp"
                     android:layout_weight="1"
@@ -135,7 +99,7 @@
 
                 <CheckBox
                     android:id="@+id/option_2_c"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_marginStart="@dimen/margin_padding_8dp"
                     android:layout_weight="1"
@@ -144,7 +108,7 @@
 
                 <CheckBox
                     android:id="@+id/option_2_d"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_marginBottom="@dimen/margin_padding_16dp"
                     android:layout_marginStart="@dimen/margin_padding_8dp"
@@ -152,26 +116,11 @@
                     android:onClick="optionsEvent"
                     android:text="@string/option_2_d" />
             </LinearLayout>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/rl_container_height"
-            android:layout_marginEnd="@dimen/margin_padding_16dp"
-            android:layout_marginStart="@dimen/margin_padding_16dp"
-            android:layout_marginTop="@dimen/margin_padding_16dp">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:contentDescription="@string/app_name"
-                android:scaleType="centerCrop"
-                android:src="@drawable/google_scholarship_india_badge_hd" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/border_for_options"
+                android:background="#55eccd34"
                 android:orientation="vertical">
 
                 <TextView
@@ -223,26 +172,11 @@
                     android:onClick="optionsEvent"
                     android:text="@string/option_3_d" />
             </LinearLayout>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/rl_container_height"
-            android:layout_marginEnd="@dimen/margin_padding_16dp"
-            android:layout_marginStart="@dimen/margin_padding_16dp"
-            android:layout_marginTop="@dimen/margin_padding_16dp">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:contentDescription="@string/app_name"
-                android:scaleType="centerCrop"
-                android:src="@drawable/google_scholarship_india_badge_hd" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/border_for_options"
+                android:background="#55eccd34"
                 android:orientation="vertical">
 
                 <TextView
@@ -294,26 +228,11 @@
                     android:onClick="optionsEvent"
                     android:text="@string/option_4_d" />
             </LinearLayout>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/rl_container_height"
-            android:layout_marginEnd="@dimen/margin_padding_16dp"
-            android:layout_marginStart="@dimen/margin_padding_16dp"
-            android:layout_marginTop="@dimen/margin_padding_16dp">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:contentDescription="@string/app_name"
-                android:scaleType="centerCrop"
-                android:src="@drawable/google_scholarship_india_badge_hd" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/border_for_options"
+                android:background="#55eccd34"
                 android:orientation="vertical">
 
                 <TextView
@@ -365,17 +284,16 @@
                     android:onClick="optionsEvent"
                     android:text="@string/option_5_d" />
             </LinearLayout>
-        </RelativeLayout>
 
         <Button
             android:id="@+id/id_btn_show_score"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
             android:background="@drawable/button_selector_enabled"
             android:onClick="showScore"
             android:padding="@dimen/margin_padding_16dp"
             android:text="@string/btn_txt_see_score"
+            android:layout_marginTop="@dimen/margin_padding_24dp"
             android:textColor="@color/colorWhite"
             android:textStyle="bold" />
     </LinearLayout>
