@@ -9,6 +9,15 @@
         <item name="colorButtonNormal">@color/colorPrimaryDark</item>
     </style>
 
+    <!-- mainLayoutContainer style -->
+    <style name="mainLLContainerStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginBottom">@dimen/margin_padding_24dp</item>
+        <item name="android:background">@drawable/bkg_border_dashed_small_ll_main</item>
+    </style>
+
     <style name="LandscapeNoToolbar" parent="AppTheme">
         <item name="android:windowNoTitle">true</item>
     </style>
@@ -51,7 +60,7 @@
     </style>
 
     <style name="LinearLayoutForOptions">
-        <item name="android:background">@drawable/bkg_border_dashed_small</item>
+        <item name="android:background">@drawable/bkg_border_dashed_small_ll_main</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:orientation">vertical</item>
         <item name="android:paddingBottom">@dimen/margin_padding_16dp</item>
