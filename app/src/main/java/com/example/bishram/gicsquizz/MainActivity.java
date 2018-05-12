@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void findViewResources() {
-        btnQuizResult = findViewById(R.id.id_btn_show_score);
+        btnQuizResult = findViewById(R.id.id_btn_quiz_result);
 
         checkBoxOption1a = findViewById(R.id.option_1_a);
         checkBoxOption1b = findViewById(R.id.option_1_b);

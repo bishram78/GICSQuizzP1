@@ -11,59 +11,70 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="@dimen/margin_padding_24dp">
+        android:padding="@dimen/margin_padding_16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#55eccd34"
             android:layout_marginBottom="@dimen/margin_padding_24dp"
+            android:background="@drawable/bkg_border_dashed_small"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorTextBackground"
+                android:background="@drawable/bkg_border_dashed_small_ques_tv"
                 android:padding="@dimen/margin_padding_12dp"
                 android:text="@string/text_ques_first"
                 android:textColor="@color/colorWhite"
                 android:textSize="@dimen/text_size_18sp"
                 app:fontFamily="sans-serif-condensed" />
 
-            <CheckBox
-                android:id="@+id/option_1_a"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="optionsEvent"
-                android:text="@string/option_1_a" />
+                android:orientation="vertical"
+                android:padding="@dimen/margin_padding_8dp">
 
-            <CheckBox
-                android:id="@+id/option_1_b"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="optionsEvent"
-                android:text="@string/option_1_b" />
+                <CheckBox
+                    android:id="@+id/option_1_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="optionsEvent"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="@string/option_1_a" />
 
-            <CheckBox
-                android:id="@+id/option_1_c"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="optionsEvent"
-                android:text="@string/option_1_c" />
+                <CheckBox
+                    android:id="@+id/option_1_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="optionsEvent"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="@string/option_1_b" />
 
-            <CheckBox
-                android:id="@+id/option_1_d"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="optionsEvent"
-                android:text="@string/option_1_d" />
+                <CheckBox
+                    android:id="@+id/option_1_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="optionsEvent"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="@string/option_1_c" />
+
+                <CheckBox
+                    android:id="@+id/option_1_d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="optionsEvent"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="@string/option_1_d" />
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#55eccd34"
             android:layout_marginBottom="@dimen/margin_padding_24dp"
+            android:background="@drawable/bkg_border_dashed_small"
             android:orientation="vertical">
 
             <TextView
@@ -76,40 +87,47 @@
                 android:textSize="@dimen/text_size_18sp"
                 app:fontFamily="sans-serif-condensed" />
 
-            <CheckBox
-                android:id="@+id/option_2_a"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="optionsEvent"
-                android:text="@string/option_2_a" />
+                android:orientation="vertical"
+                android:padding="@dimen/margin_padding_8dp">
 
-            <CheckBox
-                android:id="@+id/option_2_b"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="optionsEvent"
-                android:text="@string/option_2_b" />
+                <CheckBox
+                    android:id="@+id/option_2_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="optionsEvent"
+                    android:text="@string/option_2_a" />
 
-            <CheckBox
-                android:id="@+id/option_2_c"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="optionsEvent"
-                android:text="@string/option_2_c" />
+                <CheckBox
+                    android:id="@+id/option_2_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="optionsEvent"
+                    android:text="@string/option_2_b" />
 
-            <CheckBox
-                android:id="@+id/option_2_d"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="optionsEvent"
-                android:text="@string/option_2_d" />
+                <CheckBox
+                    android:id="@+id/option_2_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="optionsEvent"
+                    android:text="@string/option_2_c" />
+
+                <CheckBox
+                    android:id="@+id/option_2_d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="optionsEvent"
+                    android:text="@string/option_2_d" />
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#55eccd34"
             android:layout_marginBottom="@dimen/margin_padding_24dp"
+            android:background="@drawable/bkg_border_dashed_small"
             android:orientation="vertical">
 
             <TextView
@@ -122,40 +140,47 @@
                 android:textSize="@dimen/text_size_18sp"
                 app:fontFamily="sans-serif-condensed" />
 
-            <CheckBox
-                android:id="@+id/option_3_a"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="optionsEvent"
-                android:text="@string/option_3_a" />
+                android:orientation="vertical"
+                android:padding="@dimen/margin_padding_8dp">
 
-            <CheckBox
-                android:id="@+id/option_3_b"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="optionsEvent"
-                android:text="@string/option_3_b" />
+                <CheckBox
+                    android:id="@+id/option_3_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="optionsEvent"
+                    android:text="@string/option_3_a" />
 
-            <CheckBox
-                android:id="@+id/option_3_c"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="optionsEvent"
-                android:text="@string/option_3_c" />
+                <CheckBox
+                    android:id="@+id/option_3_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="optionsEvent"
+                    android:text="@string/option_3_b" />
 
-            <CheckBox
-                android:id="@+id/option_3_d"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="optionsEvent"
-                android:text="@string/option_3_d" />
+                <CheckBox
+                    android:id="@+id/option_3_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="optionsEvent"
+                    android:text="@string/option_3_c" />
+
+                <CheckBox
+                    android:id="@+id/option_3_d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="optionsEvent"
+                    android:text="@string/option_3_d" />
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#55eccd34"
             android:layout_marginBottom="@dimen/margin_padding_24dp"
+            android:background="@drawable/bkg_border_dashed_small"
             android:orientation="vertical">
 
             <TextView
@@ -168,40 +193,47 @@
                 android:textSize="@dimen/text_size_18sp"
                 app:fontFamily="sans-serif-condensed" />
 
-            <CheckBox
-                android:id="@+id/option_4_a"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="optionsEvent"
-                android:text="@string/option_4_a" />
+                android:orientation="vertical"
+                android:padding="@dimen/margin_padding_8dp">
 
-            <CheckBox
-                android:id="@+id/option_4_b"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="optionsEvent"
-                android:text="@string/option_4_b" />
+                <CheckBox
+                    android:id="@+id/option_4_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="optionsEvent"
+                    android:text="@string/option_4_a" />
 
-            <CheckBox
-                android:id="@+id/option_4_c"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="optionsEvent"
-                android:text="@string/option_4_c" />
+                <CheckBox
+                    android:id="@+id/option_4_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="optionsEvent"
+                    android:text="@string/option_4_b" />
 
-            <CheckBox
-                android:id="@+id/option_4_d"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="optionsEvent"
-                android:text="@string/option_4_d" />
+                <CheckBox
+                    android:id="@+id/option_4_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="optionsEvent"
+                    android:text="@string/option_4_c" />
+
+                <CheckBox
+                    android:id="@+id/option_4_d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="optionsEvent"
+                    android:text="@string/option_4_d" />
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#55eccd34"
             android:layout_marginBottom="@dimen/margin_padding_24dp"
+            android:background="@drawable/bkg_border_dashed_small"
             android:orientation="vertical">
 
             <TextView
@@ -214,33 +246,40 @@
                 android:textSize="@dimen/text_size_18sp"
                 app:fontFamily="sans-serif-condensed" />
 
-            <CheckBox
-                android:id="@+id/option_5_a"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="optionsEvent"
-                android:text="@string/option_5_a" />
+                android:orientation="vertical"
+                android:padding="@dimen/margin_padding_8dp">
 
-            <CheckBox
-                android:id="@+id/option_5_b"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="optionsEvent"
-                android:text="@string/option_5_b" />
+                <CheckBox
+                    android:id="@+id/option_5_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="optionsEvent"
+                    android:text="@string/option_5_a" />
 
-            <CheckBox
-                android:id="@+id/option_5_c"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="optionsEvent"
-                android:text="@string/option_5_c" />
+                <CheckBox
+                    android:id="@+id/option_5_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="optionsEvent"
+                    android:text="@string/option_5_b" />
 
-            <CheckBox
-                android:id="@+id/option_5_d"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="optionsEvent"
-                android:text="@string/option_5_d" />
+                <CheckBox
+                    android:id="@+id/option_5_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="optionsEvent"
+                    android:text="@string/option_5_c" />
+
+                <CheckBox
+                    android:id="@+id/option_5_d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="optionsEvent"
+                    android:text="@string/option_5_d" />
+            </LinearLayout>
         </LinearLayout>
 
         <Button

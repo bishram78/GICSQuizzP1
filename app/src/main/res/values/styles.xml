@@ -51,7 +51,7 @@
     </style>
 
     <style name="LinearLayoutForOptions">
-        <item name="android:background">@drawable/border_for_options</item>
+        <item name="android:background">@drawable/bkg_border_dashed_small</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:orientation">vertical</item>
         <item name="android:paddingBottom">@dimen/margin_padding_16dp</item>
