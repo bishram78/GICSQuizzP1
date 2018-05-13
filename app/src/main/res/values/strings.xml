@@ -26,6 +26,12 @@
     <string name="text_ques_fifth">Question: 5 of 8\nWhat are the basic \'Tools\' used for the development of an Android App?</string>
     <string name="text_ques_fifth_test">What are the instructors\' names of Google India Challenge Scholarship: Android Basics Course?</string>
 
+    <!--Question number six-->
+    <string name="text_ques_sixth">Question: 6 of 8\nIdentify the \'Views\' in the given Layout design below and write your answer in the Text Field.</string>
+
+    <!--Question number seven-->
+    <string name="text_ques_seventh">Question: 7 of 8\nWrite the full form of the abbreviated word \'IDE\' in context with Android Studio.</string>
+
     <string name="text_total_score">%1$s \nYour total score is %2$d/%3$d.</string>
     <string name="thanks_4_participate">Thanks for participating in quiz.</string>
     <string name="visit_again">Please visit again.</string>
@@ -85,4 +91,6 @@
     <string name="option_5_b_test">Kunal Chawla &amp; Lyla Fujiwara</string>
     <string name="option_5_c_test">Katherine Kuan &amp; Lyla Fujiwara</string>
     <string name="option_5_d_test">Kunal Chawla, Katherine Kuan &amp; Lyla Fujiwara</string>
+    <string name="iv_txt_question_sixth_img_desc">Question sixth banner</string>
+    <string name="et_txt_q_sixth_hint">TextView, CheckBox, ImageButton</string>
 </resources>

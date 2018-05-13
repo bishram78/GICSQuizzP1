@@ -20,7 +20,6 @@ import java.lang.reflect.Field;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnQuizResult;
     private int totalScore = 0;
     Resources resources;
 
@@ -28,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        btnQuizResult = findViewById(R.id.id_btn_quiz_result);
     }
 
     /**
@@ -42,11 +40,12 @@ public class MainActivity extends AppCompatActivity {
      */
     public void quizResultButton(View view) {
         totalScore = calculateScore();
-        btnQuizResult.setBackgroundResource(R.drawable.button_selector_disabled);
-        btnQuizResult.setTextColor(resources.getColor(R.color.colorPrimary));
-        btnQuizResult.setEnabled(false);
 
-        sleep(10000);
+        Button btnQuizResult = findViewById(R.id.id_btn_quiz_result);
+        btnQuizResult.setText("Press back to exit");
+        btnQuizResult.setTextSize(18);
+        btnQuizResult.setBackgroundColor(Color.RED);
+        btnQuizResult.setEnabled(false);
         }
 
     /**
@@ -70,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void optionsEvent(View view) {
-        switch (view.getId()) {
+        switch (view.getId()) {/**
             case R.id.option_1_a:
                 myToastShort("Click event carried forward.");
                 break;
@@ -85,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.option_1_d:
                 myToastShort("Click event carried forward.");
-                break;
+                break;*/
         }
     }
 }

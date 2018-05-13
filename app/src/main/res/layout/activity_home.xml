@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
     android:fillViewport="true"
     android:scrollbars="none">
 
@@ -26,35 +25,23 @@
 
                 <RadioButton
                     android:id="@+id/option_1_a"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="optionsEvent"
-                    android:text="@string/option_1_a"
-                    android:textSize="@dimen/text_size_16sp" />
+                    style="@style/radioButtonStyle"
+                    android:text="@string/option_1_a" />
 
                 <RadioButton
                     android:id="@+id/option_1_b"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="optionsEvent"
-                    android:text="@string/option_1_b"
-                    android:textSize="@dimen/text_size_16sp" />
+                    style="@style/radioButtonStyle"
+                    android:text="@string/option_1_b" />
 
                 <RadioButton
                     android:id="@+id/option_1_c"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="optionsEvent"
-                    android:text="@string/option_1_c"
-                    android:textSize="@dimen/text_size_16sp" />
+                    style="@style/radioButtonStyle"
+                    android:text="@string/option_1_c" />
 
                 <RadioButton
                     android:id="@+id/option_1_d"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="optionsEvent"
-                    android:text="@string/option_1_d"
-                    android:textSize="@dimen/text_size_16sp" />
+                    style="@style/radioButtonStyle"
+                    android:text="@string/option_1_d" />
             </RadioGroup>
         </LinearLayout>
 
@@ -70,23 +57,23 @@
                 android:padding="@dimen/margin_padding_8dp">
 
                 <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/option_2_a"
+                    style="@style/radioButtonStyle"
                     android:text="@string/option_2_a" />
 
                 <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/option_2_b"
+                    style="@style/radioButtonStyle"
                     android:text="@string/option_2_b" />
 
                 <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/option_2_c"
+                    style="@style/radioButtonStyle"
                     android:text="@string/option_2_c" />
 
                 <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/option_2_d"
+                    style="@style/radioButtonStyle"
                     android:text="@string/option_2_d" />
             </RadioGroup>
         </LinearLayout>
@@ -97,40 +84,31 @@
                 style="@style/questionTVStyle"
                 android:text="@string/text_ques_third" />
 
-            <LinearLayout
+            <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:padding="@dimen/margin_padding_8dp">
 
                 <RadioButton
                     android:id="@+id/option_3_a"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="optionsEvent"
+                    style="@style/radioButtonStyle"
                     android:text="@string/option_3_a" />
 
                 <RadioButton
                     android:id="@+id/option_3_b"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="optionsEvent"
+                    style="@style/radioButtonStyle"
                     android:text="@string/option_3_b" />
 
                 <RadioButton
                     android:id="@+id/option_3_c"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="optionsEvent"
+                    style="@style/radioButtonStyle"
                     android:text="@string/option_3_c" />
 
                 <RadioButton
                     android:id="@+id/option_3_d"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="optionsEvent"
+                    style="@style/radioButtonStyle"
                     android:text="@string/option_3_d" />
-            </LinearLayout>
+            </RadioGroup>
         </LinearLayout>
 
         <LinearLayout style="@style/mainLLContainerStyle">
@@ -145,32 +123,24 @@
                 android:orientation="vertical"
                 android:padding="@dimen/margin_padding_8dp">
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/option_4_a"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="optionsEvent"
+                    style="@style/checkboxStyle"
                     android:text="@string/option_4_a" />
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/option_4_b"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="optionsEvent"
+                    style="@style/checkboxStyle"
                     android:text="@string/option_4_b" />
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/option_4_c"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="optionsEvent"
+                    style="@style/checkboxStyle"
                     android:text="@string/option_4_c" />
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/option_4_d"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="optionsEvent"
+                    style="@style/checkboxStyle"
                     android:text="@string/option_4_d" />
             </LinearLayout>
         </LinearLayout>
@@ -189,45 +159,62 @@
 
                 <CheckBox
                     android:id="@+id/option_5_a"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="optionsEvent"
+                    style="@style/checkboxStyle"
                     android:text="@string/option_5_a" />
 
                 <CheckBox
                     android:id="@+id/option_5_b"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="optionsEvent"
+                    style="@style/checkboxStyle"
                     android:text="@string/option_5_b" />
 
                 <CheckBox
                     android:id="@+id/option_5_c"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="optionsEvent"
+                    style="@style/checkboxStyle"
                     android:text="@string/option_5_c" />
 
                 <CheckBox
                     android:id="@+id/option_5_d"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="optionsEvent"
+                    style="@style/checkboxStyle"
                     android:text="@string/option_5_d" />
             </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/mainLLContainerStyle">
+
+            <TextView
+                style="@style/questionTVStyle"
+                android:text="@string/text_ques_sixth"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/img_height_que_6of8"
+                android:layout_marginTop="@dimen/margin_padding_16dp"
+                android:contentDescription="@string/iv_txt_question_sixth_img_desc"
+                android:src="@drawable/question_6_identify_image"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:inputType="textCapWords"
+                android:layout_margin="@dimen/margin_padding_16dp"
+                android:padding="@dimen/margin_padding_12dp"
+                android:background="@drawable/bkg_border_line_edit_text"
+                android:hint="@string/et_txt_q_sixth_hint"/>
         </LinearLayout>
 
         <Button
             android:id="@+id/id_btn_quiz_result"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/ripple_effect"
-            android:onClick="quizResultButton"
-            android:padding="@dimen/margin_padding_12dp"
+            android:background="@drawable/green_trading_button_ripple_effect"
+            android:fontFamily="serif-monospace"
             android:text="@string/btn_txt_quiz_result"
             android:textAllCaps="false"
+            android:textStyle="bold"
+            android:onClick="quizResultButton"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/text_size_20sp"
-            android:textStyle="bold" />
+            android:textSize="@dimen/text_size_28sp" />
     </LinearLayout>
 </ScrollView>

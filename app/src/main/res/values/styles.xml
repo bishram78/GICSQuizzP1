@@ -29,6 +29,22 @@
         <item name="android:fontFamily">sans-serif-condensed</item>
     </style>
 
+    <!-- radioButton option Style -->
+    <style name="radioButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="android:onClick">optionsEvent</item>
+    </style>
+
+    <!-- checkbox option Style -->
+    <style name="checkboxStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="android:onClick">optionsEvent</item>
+    </style>
+
     <style name="LandscapeNoToolbar" parent="AppTheme">
         <item name="android:windowNoTitle">true</item>
     </style>
