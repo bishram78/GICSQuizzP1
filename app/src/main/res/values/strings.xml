@@ -7,23 +7,23 @@
     <string name="java_txt_error_missing">One of your question is missing.\nPlease make sure that you have ticked all question.</string>
 
     <!--Question number one-->
-    <string name="text_ques_first"><i>Question: 1 of 8</i>\nFrom the four options given below, what is <b>Android</b>?</string>
+    <string name="text_ques_first">Question: 1 of 8\nChoose an option from the four given below, that describe what the \'Android\' is?</string>
     <string name="text_ques_first_test">When was the Course of Google India Challenge Scholarship 2018 started?</string>
 
     <!--Question number two-->
-    <string name="text_ques_second"><i>Question: 2 of 8</i>\nWhat does <b>ADB</b> stands for in the Android system?</string>
+    <string name="text_ques_second">Question: 2 of 8\nWhat does \'ADB\' stands for in the Android platform?</string>
     <string name="text_ques_second_test">How many students will be selected for Phase 2 only from Android Developer track?</string>
 
     <!--Question number three-->
-    <string name="text_ques_third"><i>Question: 3 of 8</i>\nThe default text size of the Android <b>EditText</b> is?</string>
+    <string name="text_ques_third">Question: 3 of 8\nThe default text size of the Android \'EditText\' element is?</string>
     <string name="text_ques_third_test">How much time is allocated for the Google India Challenge Scholarship: Android Basics Program?</string>
 
     <!--Question number four-->
-    <string name="text_ques_fourth"><i>Question: 4 of 8</i>\nWhich of the following is not the attribute of <b>TextView</b> tag?</string>
+    <string name="text_ques_fourth">Question: 4 of 8\nWhich of the following are the possible attributes of Android \'TextView\' tag?</string>
     <string name="text_ques_fourth_test">How much time is allocated for the Google India Challenge Scholarship: Android Basics Nanodegree Program?</string>
 
     <!--Question number five-->
-    <string name="text_ques_fifth"><i>Question: 5 of 8</i>\nWhat are the basic <b>tools</b> used to develop an android app?</string>
+    <string name="text_ques_fifth">Question: 5 of 8\nWhat are the basic \'Tools\' used for the development of an Android App?</string>
     <string name="text_ques_fifth_test">What are the instructors\' names of Google India Challenge Scholarship: Android Basics Course?</string>
 
     <string name="text_total_score">%1$s \nYour total score is %2$d/%3$d.</string>
@@ -49,7 +49,7 @@
     <string name="option_2_a">Android Debug Bridge</string>
     <string name="option_2_b">Android Debug Board</string>
     <string name="option_2_c">Android Deluxe Bridge</string>
-    <string name="option_2_d">None of these</string>
+    <string name="option_2_d">None of the above</string>
 
     <string name="option_2_a_test">500 Students</string>
     <string name="option_2_b_test">1000 Students</string>
@@ -79,7 +79,7 @@
     <string name="option_5_a">JDK</string>
     <string name="option_5_b">ADT plugin</string>
     <string name="option_5_c">SDK Tools</string>
-    <string name="option_5_d">All of these</string>
+    <string name="option_5_d">None of above</string>
 
     <string name="option_5_a_test">Kunal Chawla &amp; Katherine Kuan</string>
     <string name="option_5_b_test">Kunal Chawla &amp; Lyla Fujiwara</string>

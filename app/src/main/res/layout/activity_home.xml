@@ -13,102 +13,89 @@
         android:orientation="vertical"
         android:padding="@dimen/margin_padding_16dp">
 
-        <LinearLayout
-            style="@style/mainLLContainerStyle">
+        <LinearLayout style="@style/mainLLContainerStyle">
 
             <TextView
                 style="@style/questionTVStyle"
-                android:text="@string/text_ques_first"/>
+                android:text="@string/text_ques_first" />
 
-            <LinearLayout
+            <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:padding="@dimen/margin_padding_8dp">
 
-                <CheckBox
+                <RadioButton
                     android:id="@+id/option_1_a"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="optionsEvent"
-                    android:textSize="@dimen/text_size_16sp"
-                    android:text="@string/option_1_a" />
+                    android:text="@string/option_1_a"
+                    android:textSize="@dimen/text_size_16sp" />
 
-                <CheckBox
+                <RadioButton
                     android:id="@+id/option_1_b"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="optionsEvent"
-                    android:textSize="@dimen/text_size_16sp"
-                    android:text="@string/option_1_b" />
+                    android:text="@string/option_1_b"
+                    android:textSize="@dimen/text_size_16sp" />
 
-                <CheckBox
+                <RadioButton
                     android:id="@+id/option_1_c"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="optionsEvent"
-                    android:textSize="@dimen/text_size_16sp"
-                    android:text="@string/option_1_c" />
+                    android:text="@string/option_1_c"
+                    android:textSize="@dimen/text_size_16sp" />
 
-                <CheckBox
+                <RadioButton
                     android:id="@+id/option_1_d"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="optionsEvent"
-                    android:textSize="@dimen/text_size_16sp"
-                    android:text="@string/option_1_d" />
-            </LinearLayout>
+                    android:text="@string/option_1_d"
+                    android:textSize="@dimen/text_size_16sp" />
+            </RadioGroup>
         </LinearLayout>
 
-        <LinearLayout
-            style="@style/mainLLContainerStyle">
+        <LinearLayout style="@style/mainLLContainerStyle">
 
             <TextView
                 style="@style/questionTVStyle"
-                android:text="@string/text_ques_second"/>
+                android:text="@string/text_ques_second" />
 
-            <LinearLayout
+            <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:padding="@dimen/margin_padding_8dp">
 
-                <CheckBox
-                    android:id="@+id/option_2_a"
+                <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="optionsEvent"
                     android:text="@string/option_2_a" />
 
-                <CheckBox
-                    android:id="@+id/option_2_b"
+                <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="optionsEvent"
                     android:text="@string/option_2_b" />
 
-                <CheckBox
-                    android:id="@+id/option_2_c"
+                <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="optionsEvent"
                     android:text="@string/option_2_c" />
 
-                <CheckBox
-                    android:id="@+id/option_2_d"
+                <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="optionsEvent"
                     android:text="@string/option_2_d" />
-            </LinearLayout>
+            </RadioGroup>
         </LinearLayout>
 
-        <LinearLayout
-            style="@style/mainLLContainerStyle">
+        <LinearLayout style="@style/mainLLContainerStyle">
 
             <TextView
                 style="@style/questionTVStyle"
-                android:text="@string/text_ques_third"/>
+                android:text="@string/text_ques_third" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -116,28 +103,28 @@
                 android:orientation="vertical"
                 android:padding="@dimen/margin_padding_8dp">
 
-                <CheckBox
+                <RadioButton
                     android:id="@+id/option_3_a"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="optionsEvent"
                     android:text="@string/option_3_a" />
 
-                <CheckBox
+                <RadioButton
                     android:id="@+id/option_3_b"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="optionsEvent"
                     android:text="@string/option_3_b" />
 
-                <CheckBox
+                <RadioButton
                     android:id="@+id/option_3_c"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="optionsEvent"
                     android:text="@string/option_3_c" />
 
-                <CheckBox
+                <RadioButton
                     android:id="@+id/option_3_d"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -146,12 +133,11 @@
             </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout
-            style="@style/mainLLContainerStyle">
+        <LinearLayout style="@style/mainLLContainerStyle">
 
             <TextView
                 style="@style/questionTVStyle"
-                android:text="@string/text_ques_fourth"/>
+                android:text="@string/text_ques_fourth" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -159,28 +145,28 @@
                 android:orientation="vertical"
                 android:padding="@dimen/margin_padding_8dp">
 
-                <CheckBox
+                <RadioButton
                     android:id="@+id/option_4_a"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="optionsEvent"
                     android:text="@string/option_4_a" />
 
-                <CheckBox
+                <RadioButton
                     android:id="@+id/option_4_b"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="optionsEvent"
                     android:text="@string/option_4_b" />
 
-                <CheckBox
+                <RadioButton
                     android:id="@+id/option_4_c"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="optionsEvent"
                     android:text="@string/option_4_c" />
 
-                <CheckBox
+                <RadioButton
                     android:id="@+id/option_4_d"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -189,12 +175,11 @@
             </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout
-            style="@style/mainLLContainerStyle">
+        <LinearLayout style="@style/mainLLContainerStyle">
 
             <TextView
                 style="@style/questionTVStyle"
-                android:text="@string/text_ques_fifth"/>
+                android:text="@string/text_ques_fifth" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -236,11 +221,13 @@
             android:id="@+id/id_btn_quiz_result"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_selector_enabled"
+            android:background="@drawable/ripple_effect"
             android:onClick="quizResultButton"
-            android:padding="@dimen/margin_padding_16dp"
+            android:padding="@dimen/margin_padding_12dp"
             android:text="@string/btn_txt_quiz_result"
+            android:textAllCaps="false"
             android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_20sp"
             android:textStyle="bold" />
     </LinearLayout>
 </ScrollView>

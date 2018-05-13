@@ -10,4 +10,5 @@
     <color name="colorButtonDisabled">#C293FD</color>
     <color name="colorButtonEnabled">#E1A35AFF</color>
     <color name="colorTextBackground">#CC000000</color>
+    <color name="colorYellow">#D2FFEA00</color>
 </resources>
