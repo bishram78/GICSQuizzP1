@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,10 +22,13 @@ import java.lang.reflect.Field;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Button btn_quiz_result;
+    private CheckBox option_4_a, option_4_b, option_4_c, option_4_d;
+    private CheckBox option_5_a, option_5_b, option_5_c, option_5_d;
     private RadioButton option_1_c;
     private RadioButton option_2_a;
     private RadioButton option_3_c;
-    private CheckBox option_4_a, option_4_c, option_4_d;
+    private ScrollView scrollView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,12 +39,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void findAllViews() {
+        btn_quiz_result = findViewById(R.id.id_btn_quiz_result);
         option_1_c = findViewById(R.id.id_rb_opt_1_c);
         option_2_a = findViewById(R.id.id_rb_opt_2_a);
         option_3_c = findViewById(R.id.id_rb_opt_3_c);
         option_4_a = findViewById(R.id.id_cb_opt_4_a);
+        option_4_b = findViewById(R.id.id_cb_opt_4_b);
         option_4_c = findViewById(R.id.id_cb_opt_4_c);
         option_4_d = findViewById(R.id.id_cb_opt_4_d);
+        option_5_a = findViewById(R.id.id_cb_opt_5_a);
+        option_5_b = findViewById(R.id.id_cb_opt_5_b);
+        option_5_c = findViewById(R.id.id_cb_opt_5_c);
+        option_5_d = findViewById(R.id.id_cb_opt_5_d);
+        scrollView = findViewById(R.id.scroll_view);
     }
 
     /**
@@ -52,6 +63,10 @@ public class MainActivity extends AppCompatActivity {
         String thankYou = "Thanks for participation.";
         cToastShort(customMsg);
         cToastShort(thankYou);
+
+        btn_quiz_result.setText("Press back key to EXIT");
+        btn_quiz_result.setEnabled(false);
+        scrollView.setVisibility(View.GONE);
     }
 
     private int calcQuizScore() {
@@ -71,6 +86,16 @@ public class MainActivity extends AppCompatActivity {
 
         if (option_4_a.isChecked()&&option_4_c.isChecked()&&option_4_d.isChecked()) {
             totalScored += 5;
+        }
+
+        else if (option_4_a.isChecked()&&option_4_b.isChecked()&&option_4_c.isChecked()&&option_4_d.isChecked())
+
+        if (option_5_a.isChecked()&&option_5_b.isChecked()&&option_5_c.isChecked()) {
+            totalScored += 5;
+        }
+
+        else if (option_5_a.isChecked()&&option_5_b.isChecked()&&option_5_c.isChecked()&&option_5_d.isChecked()) {
+            totalScored += 0;
         }
         return totalScored;
     }

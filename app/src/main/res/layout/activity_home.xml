@@ -19,6 +19,7 @@
         android:text="@string/main_activity_toolbar_title"/>
 
     <ScrollView
+        android:id="@+id/scroll_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -166,6 +167,41 @@
                         android:text="@string/option_4_d"/>
                 </RadioGroup>
             </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/mainLLContainerStyle">
+
+                <TextView
+                    android:id="@+id/id_tv_ques_fifth"
+                    style="@style/questionTVStyle"
+                    android:text="@string/text_ques_fifth"/>
+
+                <RadioGroup
+                    style="@style/radioButtonGroup"
+                    android:layout_below="@id/id_tv_ques_fifth">
+
+                    <CheckBox
+                        android:id="@+id/id_cb_opt_5_a"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_5_a"/>
+
+                    <CheckBox
+                        android:id="@+id/id_cb_opt_5_b"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_5_b"/>
+
+                    <CheckBox
+                        android:id="@+id/id_cb_opt_5_c"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_5_c"/>
+
+                    <CheckBox
+                        android:id="@+id/id_cb_opt_5_d"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_5_d"/>
+                </RadioGroup>
+            </RelativeLayout>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -181,6 +217,7 @@
         android:background="@color/colorBlack" />
 
     <Button
+        android:id="@+id/id_btn_quiz_result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/colorBlack"
