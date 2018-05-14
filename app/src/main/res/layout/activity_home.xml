@@ -17,4 +17,29 @@
         android:ellipsize="end"
         android:marqueeRepeatLimit="marquee_forever"
         android:text="@string/main_activity_toolbar_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_20sp"
+        android:paddingTop="@dimen/margin_padding_16dp"
+        android:paddingBottom="@dimen/margin_padding_16dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/btn_txt_quiz_result"/>
 </LinearLayout>
