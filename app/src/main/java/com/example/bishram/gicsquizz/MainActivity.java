@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     private RadioButton option_1_c;
     private RadioButton option_2_a;
+    private RadioButton option_3_c;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     private void findAllViews() {
         option_1_c = findViewById(R.id.id_rb_opt_1_c);
         option_2_a = findViewById(R.id.id_rb_opt_2_a);
+        option_3_c = findViewById(R.id.id_rb_opt_3_c);
     }
 
     /**
@@ -42,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void quizResultButton(View view) {
         int quizScore = calcQuizScore();
-        String customMsg = "Your score is " + quizScore + "/10";
+        String customMsg = "Your score is " + quizScore + "/15";
         String thankYou = "Thanks for participation.";
         cToastShort(customMsg);
         cToastShort(thankYou);
@@ -56,6 +58,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (option_2_a.isChecked()) {
+            totalScored += 5;
+        }
+
+        if (option_3_c.isChecked()) {
             totalScored += 5;
         }
         return totalScored;

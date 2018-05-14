@@ -98,17 +98,52 @@
                         android:text="@string/option_2_d"/>
                 </RadioGroup>
             </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/mainLLContainerStyle">
+
+                <TextView
+                    android:id="@+id/id_tv_ques_third"
+                    style="@style/questionTVStyle"
+                    android:text="@string/text_ques_third"/>
+
+                <RadioGroup
+                    style="@style/radioButtonGroup"
+                    android:layout_below="@id/id_tv_ques_third">
+
+                    <RadioButton
+                        android:id="@+id/id_rb_opt_3_a"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_3_a"/>
+
+                    <RadioButton
+                        android:id="@+id/id_rb_opt_3_b"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_3_b"/>
+
+                    <RadioButton
+                        android:id="@+id/id_rb_opt_3_c"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_3_c"/>
+
+                    <RadioButton
+                        android:id="@+id/id_rb_opt_3_d"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_3_d"/>
+                </RadioGroup>
+            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/colorBlack"
         android:textSize="@dimen/text_size_20sp"
-        android:paddingTop="@dimen/margin_padding_16dp"
-        android:paddingBottom="@dimen/margin_padding_16dp"
-        android:background="@color/colorPrimaryDark"
+        android:paddingTop="@dimen/margin_padding_12dp"
+        android:paddingBottom="@dimen/margin_padding_12dp"
+        android:background="@drawable/ripple_effect"
         android:onClick="quizResultButton"
+        android:textStyle="bold"
         android:text="@string/btn_txt_quiz_result"/>
 </LinearLayout>
