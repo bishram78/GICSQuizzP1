@@ -284,6 +284,31 @@
                 </LinearLayout>
             </RelativeLayout>
 
+
+            <RelativeLayout style="@style/mainLLContainerStyle">
+
+                <TextView
+                    android:id="@+id/id_tv_ques_eighth"
+                    style="@style/questionTVStyle"
+                    android:text="@string/text_ques_eighth" />
+
+                <LinearLayout
+                    android:id="@+id/id_ll_container_eighth"
+                    style="@style/radioButtonGroup"
+                    android:layout_below="@id/id_tv_ques_eighth"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/id_et_ans_eighth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bkg_border_line_edit_text"
+                        android:hint="@string/et_text_type_your_ans"
+                        android:inputType="textCapWords"
+                        android:padding="@dimen/margin_padding_12dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
