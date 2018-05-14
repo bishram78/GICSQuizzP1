@@ -1,382 +1,344 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    android:fillViewport="true"
-    android:scrollbars="none">
+    android:orientation="vertical">
 
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="@dimen/ma_title_text_height"
+        android:background="@color/colorPrimaryDark"
+        android:ellipsize="end"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingBottom="@dimen/margin_padding_8dp"
+        android:singleLine="true"
+        android:text="@string/main_activity_toolbar_title"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_18sp" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/rl_container_height"
-            android:layout_marginEnd="@dimen/margin_padding_16dp"
-            android:layout_marginStart="@dimen/margin_padding_16dp"
-            android:layout_marginTop="@dimen/margin_padding_16dp">
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:fillViewport="true"
+        android:scrollbars="none">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:contentDescription="@string/app_name"
-                android:scaleType="centerCrop"
-                android:src="@drawable/google_scholarship_india_badge_hd" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/border_for_options"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorTextBackground"
-                    android:lines="3"
-                    android:padding="@dimen/margin_padding_12dp"
-                    android:text="@string/text_ques_first"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="@dimen/text_size_18sp"
-                    app:fontFamily="sans-serif-condensed" />
-
-                <CheckBox
-                    android:id="@+id/option_1_a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
-                    android:layout_marginTop="@dimen/margin_padding_16dp"
-                    android:layout_weight="1"
-                    android:onClick="optionsEvent"
-                    android:text="@string/option_1_a" />
-
-                <CheckBox
-                    android:id="@+id/option_1_b"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
-                    android:layout_weight="1"
-                    android:onClick="optionsEvent"
-                    android:text="@string/option_1_b" />
-
-                <CheckBox
-                    android:id="@+id/option_1_c"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
-                    android:layout_weight="1"
-                    android:onClick="optionsEvent"
-                    android:text="@string/option_1_c" />
-
-                <CheckBox
-                    android:id="@+id/option_1_d"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_marginBottom="@dimen/margin_padding_16dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
-                    android:layout_weight="1"
-                    android:onClick="optionsEvent"
-                    android:text="@string/option_1_d" />
-            </LinearLayout>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/rl_container_height"
-            android:layout_marginEnd="@dimen/margin_padding_16dp"
-            android:layout_marginStart="@dimen/margin_padding_16dp"
-            android:layout_marginTop="@dimen/margin_padding_16dp">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:contentDescription="@string/app_name"
-                android:scaleType="centerCrop"
-                android:src="@drawable/google_scholarship_india_badge_hd" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/border_for_options"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorTextBackground"
-                    android:lines="3"
-                    android:padding="@dimen/margin_padding_12dp"
-                    android:text="@string/text_ques_second"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="@dimen/text_size_18sp"
-                    app:fontFamily="sans-serif-condensed" />
-
-                <CheckBox
-                    android:id="@+id/option_2_a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
-                    android:layout_marginTop="@dimen/margin_padding_16dp"
-                    android:layout_weight="1"
-                    android:onClick="optionsEvent"
-                    android:text="@string/option_2_a" />
-
-                <CheckBox
-                    android:id="@+id/option_2_b"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
-                    android:layout_weight="1"
-                    android:onClick="optionsEvent"
-                    android:text="@string/option_2_b" />
-
-                <CheckBox
-                    android:id="@+id/option_2_c"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
-                    android:layout_weight="1"
-                    android:onClick="optionsEvent"
-                    android:text="@string/option_2_c" />
-
-                <CheckBox
-                    android:id="@+id/option_2_d"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_marginBottom="@dimen/margin_padding_16dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
-                    android:layout_weight="1"
-                    android:onClick="optionsEvent"
-                    android:text="@string/option_2_d" />
-            </LinearLayout>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/rl_container_height"
-            android:layout_marginEnd="@dimen/margin_padding_16dp"
-            android:layout_marginStart="@dimen/margin_padding_16dp"
-            android:layout_marginTop="@dimen/margin_padding_16dp">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:contentDescription="@string/app_name"
-                android:scaleType="centerCrop"
-                android:src="@drawable/google_scholarship_india_badge_hd" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/border_for_options"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorTextBackground"
-                    android:lines="3"
-                    android:padding="@dimen/margin_padding_12dp"
-                    android:text="@string/text_ques_third"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="@dimen/text_size_18sp"
-                    app:fontFamily="sans-serif-condensed" />
-
-                <CheckBox
-                    android:id="@+id/option_3_a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
-                    android:layout_marginTop="@dimen/margin_padding_16dp"
-                    android:layout_weight="1"
-                    android:onClick="optionsEvent"
-                    android:text="@string/option_3_a" />
-
-                <CheckBox
-                    android:id="@+id/option_3_b"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
-                    android:layout_weight="1"
-                    android:onClick="optionsEvent"
-                    android:text="@string/option_3_b" />
-
-                <CheckBox
-                    android:id="@+id/option_3_c"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
-                    android:layout_weight="1"
-                    android:onClick="optionsEvent"
-                    android:text="@string/option_3_c" />
-
-                <CheckBox
-                    android:id="@+id/option_3_d"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_marginBottom="@dimen/margin_padding_16dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
-                    android:layout_weight="1"
-                    android:onClick="optionsEvent"
-                    android:text="@string/option_3_d" />
-            </LinearLayout>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/rl_container_height"
-            android:layout_marginEnd="@dimen/margin_padding_16dp"
-            android:layout_marginStart="@dimen/margin_padding_16dp"
-            android:layout_marginTop="@dimen/margin_padding_16dp">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:contentDescription="@string/app_name"
-                android:scaleType="centerCrop"
-                android:src="@drawable/google_scholarship_india_badge_hd" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/border_for_options"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorTextBackground"
-                    android:lines="3"
-                    android:padding="@dimen/margin_padding_12dp"
-                    android:text="@string/text_ques_fourth"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="@dimen/text_size_18sp"
-                    app:fontFamily="sans-serif-condensed" />
-
-                <CheckBox
-                    android:id="@+id/option_4_a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
-                    android:layout_marginTop="@dimen/margin_padding_16dp"
-                    android:layout_weight="1"
-                    android:onClick="optionsEvent"
-                    android:text="@string/option_4_a" />
-
-                <CheckBox
-                    android:id="@+id/option_4_b"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
-                    android:layout_weight="1"
-                    android:onClick="optionsEvent"
-                    android:text="@string/option_4_b" />
-
-                <CheckBox
-                    android:id="@+id/option_4_c"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
-                    android:layout_weight="1"
-                    android:onClick="optionsEvent"
-                    android:text="@string/option_4_c" />
-
-                <CheckBox
-                    android:id="@+id/option_4_d"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_marginBottom="@dimen/margin_padding_16dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
-                    android:layout_weight="1"
-                    android:onClick="optionsEvent"
-                    android:text="@string/option_4_d" />
-            </LinearLayout>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/rl_container_height"
-            android:layout_marginEnd="@dimen/margin_padding_16dp"
-            android:layout_marginStart="@dimen/margin_padding_16dp"
-            android:layout_marginTop="@dimen/margin_padding_16dp">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:contentDescription="@string/app_name"
-                android:scaleType="centerCrop"
-                android:src="@drawable/google_scholarship_india_badge_hd" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/border_for_options"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorTextBackground"
-                    android:lines="3"
-                    android:padding="@dimen/margin_padding_12dp"
-                    android:text="@string/text_ques_fifth"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="@dimen/text_size_18sp"
-                    app:fontFamily="sans-serif-condensed" />
-
-                <CheckBox
-                    android:id="@+id/option_5_a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
-                    android:layout_marginTop="@dimen/margin_padding_16dp"
-                    android:layout_weight="1"
-                    android:onClick="optionsEvent"
-                    android:text="@string/option_5_a" />
-
-                <CheckBox
-                    android:id="@+id/option_5_b"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
-                    android:layout_weight="1"
-                    android:onClick="optionsEvent"
-                    android:text="@string/option_5_b" />
-
-                <CheckBox
-                    android:id="@+id/option_5_c"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
-                    android:layout_weight="1"
-                    android:onClick="optionsEvent"
-                    android:text="@string/option_5_c" />
-
-                <CheckBox
-                    android:id="@+id/option_5_d"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_marginBottom="@dimen/margin_padding_16dp"
-                    android:layout_marginStart="@dimen/margin_padding_8dp"
-                    android:layout_weight="1"
-                    android:onClick="optionsEvent"
-                    android:text="@string/option_5_d" />
-            </LinearLayout>
-        </RelativeLayout>
-
-        <Button
-            android:id="@+id/id_btn_show_score"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:background="@drawable/button_selector_enabled"
-            android:onClick="showScore"
-            android:padding="@dimen/margin_padding_16dp"
-            android:text="@string/btn_txt_see_score"
-            android:textColor="@color/colorWhite"
-            android:textStyle="bold" />
-    </LinearLayout>
-</ScrollView>
+            android:orientation="vertical">
+
+            <RelativeLayout style="@style/mainLLContainerStyle">
+
+                <TextView
+                    android:id="@+id/id_tv_ques_first"
+                    style="@style/questionTVStyle"
+                    android:text="@string/text_ques_first" />
+
+                <RadioGroup
+                    style="@style/radioButtonGroup"
+                    android:layout_below="@id/id_tv_ques_first">
+
+                    <RadioButton
+                        android:id="@+id/id_rb_opt_1_a"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_1_a" />
+
+                    <RadioButton
+                        android:id="@+id/id_rb_opt_1_b"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_1_b" />
+
+                    <RadioButton
+                        android:id="@+id/id_rb_opt_1_c"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_1_c" />
+
+                    <RadioButton
+                        android:id="@+id/id_rb_opt_1_d"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_1_d" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/mainLLContainerStyle">
+
+                <TextView
+                    android:id="@+id/id_tv_ques_second"
+                    style="@style/questionTVStyle"
+                    android:text="@string/text_ques_second" />
+
+                <RadioGroup
+                    style="@style/radioButtonGroup"
+                    android:layout_below="@id/id_tv_ques_second">
+
+                    <RadioButton
+                        android:id="@+id/id_rb_opt_2_a"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_2_a" />
+
+                    <RadioButton
+                        android:id="@+id/id_rb_opt_2_b"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_2_b" />
+
+                    <RadioButton
+                        android:id="@+id/id_rb_opt_2_c"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_2_c" />
+
+                    <RadioButton
+                        android:id="@+id/id_rb_opt_2_d"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_2_d" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/mainLLContainerStyle">
+
+                <TextView
+                    android:id="@+id/id_tv_ques_third"
+                    style="@style/questionTVStyle"
+                    android:text="@string/text_ques_third" />
+
+                <RadioGroup
+                    style="@style/radioButtonGroup"
+                    android:layout_below="@id/id_tv_ques_third">
+
+                    <RadioButton
+                        android:id="@+id/id_rb_opt_3_a"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_3_a" />
+
+                    <RadioButton
+                        android:id="@+id/id_rb_opt_3_b"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_3_b" />
+
+                    <RadioButton
+                        android:id="@+id/id_rb_opt_3_c"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_3_c" />
+
+                    <RadioButton
+                        android:id="@+id/id_rb_opt_3_d"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_3_d" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/mainLLContainerStyle">
+
+                <TextView
+                    android:id="@+id/id_tv_ques_fourth"
+                    style="@style/questionTVStyle"
+                    android:text="@string/text_ques_fourth" />
+
+                <RadioGroup
+                    style="@style/radioButtonGroup"
+                    android:layout_below="@id/id_tv_ques_fourth">
+
+                    <CheckBox
+                        android:id="@+id/id_cb_opt_4_a"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_4_a" />
+
+                    <CheckBox
+                        android:id="@+id/id_cb_opt_4_b"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_4_b" />
+
+                    <CheckBox
+                        android:id="@+id/id_cb_opt_4_c"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_4_c" />
+
+                    <CheckBox
+                        android:id="@+id/id_cb_opt_4_d"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_4_d" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/mainLLContainerStyle">
+
+                <TextView
+                    android:id="@+id/id_tv_ques_fifth"
+                    style="@style/questionTVStyle"
+                    android:text="@string/text_ques_fifth" />
+
+                <RadioGroup
+                    style="@style/radioButtonGroup"
+                    android:layout_below="@id/id_tv_ques_fifth">
+
+                    <CheckBox
+                        android:id="@+id/id_cb_opt_5_a"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_5_a" />
+
+                    <CheckBox
+                        android:id="@+id/id_cb_opt_5_b"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_5_b" />
+
+                    <CheckBox
+                        android:id="@+id/id_cb_opt_5_c"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_5_c" />
+
+                    <CheckBox
+                        android:id="@+id/id_cb_opt_5_d"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_5_d" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/mainLLContainerStyle">
+
+                <TextView
+                    android:id="@+id/id_tv_ques_sixth"
+                    style="@style/questionTVStyle"
+                    android:text="@string/text_ques_sixth" />
+
+                <LinearLayout
+                    style="@style/radioButtonGroup"
+                    android:layout_below="@id/id_tv_ques_sixth"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/id_iv_opt_6th"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginBottom="@dimen/margin_padding_16dp"
+                        android:contentDescription="@string/iv_txt_question_sixth_img_desc"
+                        android:src="@drawable/question_6_identify_image" />
+
+                    <EditText
+                        android:id="@+id/id_et_ans_sixth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bkg_border_line_edit_text"
+                        android:hint="@string/et_txt_q_sixth_hint"
+                        android:inputType="textCapWords"
+                        android:padding="@dimen/margin_padding_12dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/mainLLContainerStyle">
+
+                <TextView
+                    android:id="@+id/id_tv_ques_seventh"
+                    style="@style/questionTVStyle"
+                    android:text="@string/text_ques_seventh" />
+
+                <LinearLayout
+                    android:id="@+id/id_ll_container_seventh"
+                    style="@style/radioButtonGroup"
+                    android:layout_below="@id/id_tv_ques_seventh"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id_tv_opt_7_a"
+                        style="@style/radioButtonOption"
+                        android:paddingBottom="@dimen/margin_padding_8dp"
+                        android:text="@string/option_7_a"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_16sp" />
+
+                    <TextView
+                        android:id="@+id/id_tv_opt_7_b"
+                        style="@style/radioButtonOption"
+                        android:paddingBottom="@dimen/margin_padding_8dp"
+                        android:text="@string/option_7_b"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_16sp" />
+
+                    <TextView
+                        android:id="@+id/id_tv_opt_7_c"
+                        style="@style/radioButtonOption"
+                        android:paddingBottom="@dimen/margin_padding_8dp"
+                        android:text="@string/option_7_c"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_16sp" />
+
+                    <TextView
+                        android:id="@+id/id_tv_opt_7_d"
+                        style="@style/radioButtonOption"
+                        android:layout_marginBottom="@dimen/text_size_16sp"
+                        android:text="@string/option_7_d"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_16sp" />
+
+                    <EditText
+                        android:id="@+id/id_et_ans_seventh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bkg_border_line_edit_text"
+                        android:hint="@string/et_text_type_your_ans"
+                        android:inputType="textCapWords"
+                        android:padding="@dimen/margin_padding_12dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/mainLLContainerStyle">
+
+                <TextView
+                    android:id="@+id/id_tv_ques_eighth"
+                    style="@style/questionTVStyle"
+                    android:text="@string/text_ques_eighth" />
+
+                <LinearLayout
+                    android:id="@+id/id_ll_container_eighth"
+                    style="@style/radioButtonGroup"
+                    android:layout_below="@id/id_tv_ques_eighth"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/id_et_ans_eighth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bkg_border_line_edit_text"
+                        android:hint="@string/et_text_type_your_ans"
+                        android:inputType="textCapWords"
+                        android:padding="@dimen/margin_padding_12dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_padding_24dp"
+                android:gravity="center"
+                android:text="@string/text_end_of_question" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_padding_1px"
+        android:background="@color/colorBlack" />
+
+    <Button
+        android:id="@+id/id_btn_quiz_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_effect"
+        android:onClick="quizResultButton"
+        android:paddingBottom="@dimen/margin_padding_12dp"
+        android:paddingTop="@dimen/margin_padding_12dp"
+        android:text="@string/btn_txt_quiz_result"
+        android:textAllCaps="false"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_size_20sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_padding_1px"
+        android:background="@color/colorBlack" />
+</LinearLayout>

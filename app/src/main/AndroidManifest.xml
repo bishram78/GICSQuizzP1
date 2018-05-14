@@ -11,8 +11,7 @@
         android:theme="@style/LandscapeNoToolbar">
 
         <activity
-            android:name=".MainActivity"
-            android:label="@string/main_activity_toolbar_title">
+            android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

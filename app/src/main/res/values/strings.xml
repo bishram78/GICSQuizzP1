@@ -3,28 +3,37 @@
     <string name="main_activity_toolbar_title">Google IC Scholarship Quizzz</string>
 
     <!--Button name to show score and result of the Quiz-->
-    <string name="btn_txt_see_score">Quiz Result</string>
+    <string name="btn_txt_quiz_result">Quiz Result</string>
     <string name="java_txt_error_missing">One of your question is missing.\nPlease make sure that you have ticked all question.</string>
 
     <!--Question number one-->
-    <string name="text_ques_first">Q.1 From the four options given below, what is <b>Android</b>?</string>
+    <string name="text_ques_first">Question: 1 of 8\nChoose an option from the four given below, that describe what \'Android\' is?</string>
     <string name="text_ques_first_test">When was the Course of Google India Challenge Scholarship 2018 started?</string>
 
     <!--Question number two-->
-    <string name="text_ques_second">Q.2 What does <b>ADB</b> stands for in the Android system?</string>
+    <string name="text_ques_second">Question: 2 of 8\nWhat does \'ADB\' stands for in the Android platform?</string>
     <string name="text_ques_second_test">How many students will be selected for Phase 2 only from Android Developer track?</string>
 
     <!--Question number three-->
-    <string name="text_ques_third">Q.3 The default text size of the Android <b>EditText</b> is?</string>
+    <string name="text_ques_third">Question: 3 of 8\nThe default text size of the Android \'EditText\' element is?</string>
     <string name="text_ques_third_test">How much time is allocated for the Google India Challenge Scholarship: Android Basics Program?</string>
 
     <!--Question number four-->
-    <string name="text_ques_fourth">Q.4 Which of the following is not the attribute of <b>TextView</b> tag?</string>
+    <string name="text_ques_fourth">Question: 4 of 8\nWhich of the following are the possible attributes of Android \'TextView\' tag?</string>
     <string name="text_ques_fourth_test">How much time is allocated for the Google India Challenge Scholarship: Android Basics Nanodegree Program?</string>
 
     <!--Question number five-->
-    <string name="text_ques_fifth">Q.5 What are the basic <b>tools</b> used to develop an android app?</string>
+    <string name="text_ques_fifth">Question: 5 of 8\nWhat are the basic \'Tools\' used for the development of an Android App?</string>
     <string name="text_ques_fifth_test">What are the instructors\' names of Google India Challenge Scholarship: Android Basics Course?</string>
+
+    <!--Question number six-->
+    <string name="text_ques_sixth">Question: 6 of 8\nIdentify the \'Views\' in the given Layout design below and write your answer in the Text Field.</string>
+
+    <!--Question number seven-->
+    <string name="text_ques_seventh">Question: 7 of 8\nWrite the full form of the abbreviated word \'IDE\' in context with Android Studio.</string>
+
+    <!--Question number eight-->
+    <string name="text_ques_eighth">Question: 8 of 8\nWhat is the latest official \'Programming Language\' that replaced the JAVA?</string>
 
     <string name="text_total_score">%1$s \nYour total score is %2$d/%3$d.</string>
     <string name="thanks_4_participate">Thanks for participating in quiz.</string>
@@ -38,8 +47,8 @@
 
     <string name="option_1_a">Application</string>
     <string name="option_1_b">Smart Phone</string>
-    <string name="option_1_c">Programming Language</string>
-    <string name="option_1_d">Operating System</string>
+    <string name="option_1_c">Operating System</string>
+    <string name="option_1_d">Programming Language</string>
 
     <string name="option_1_a_test">January 1</string>
     <string name="option_1_b_test">January 21</string>
@@ -49,7 +58,7 @@
     <string name="option_2_a">Android Debug Bridge</string>
     <string name="option_2_b">Android Debug Board</string>
     <string name="option_2_c">Android Deluxe Bridge</string>
-    <string name="option_2_d">None of these</string>
+    <string name="option_2_d">None of the above</string>
 
     <string name="option_2_a_test">500 Students</string>
     <string name="option_2_b_test">1000 Students</string>
@@ -79,10 +88,21 @@
     <string name="option_5_a">JDK</string>
     <string name="option_5_b">ADT plugin</string>
     <string name="option_5_c">SDK Tools</string>
-    <string name="option_5_d">All of these</string>
+    <string name="option_5_d">None of above</string>
 
     <string name="option_5_a_test">Kunal Chawla &amp; Katherine Kuan</string>
     <string name="option_5_b_test">Kunal Chawla &amp; Lyla Fujiwara</string>
     <string name="option_5_c_test">Katherine Kuan &amp; Lyla Fujiwara</string>
     <string name="option_5_d_test">Kunal Chawla, Katherine Kuan &amp; Lyla Fujiwara</string>
+
+    <string name="option_7_a">(1) Integrated Department Environment</string>
+    <string name="option_7_b">(2) Integrated Development Environment</string>
+    <string name="option_7_c">(3) Intermediate Debate Enterprise</string>
+    <string name="option_7_d">(4) Intermediate Devil Enterprise</string>
+
+    <string name="iv_txt_question_sixth_img_desc">Question sixth banner</string>
+    <string name="et_txt_q_sixth_hint">Textview, Checkbox and Imagebutton</string>
+    <string name="text_end_of_question">--|: End of questions :|--</string>
+    <string name="txt_press_back_exit">Press back key to EXIT</string>
+    <string name="et_text_type_your_ans">Type your answer here</string>
 </resources>
