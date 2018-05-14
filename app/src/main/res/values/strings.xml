@@ -105,4 +105,10 @@
     <string name="text_end_of_question">--|: End of questions :|--</string>
     <string name="txt_press_back_exit">Press back key to EXIT</string>
     <string name="et_text_type_your_ans">Type your answer here</string>
+
+    <!--String resources for the SplashActivity-->
+    <string name="tv_text_sa_gics">GICS</string>
+    <string name="tv_text_sa_quizz">Quizz</string>
+    <string name="tv_text_sa_welcome_to_the">Welcome to the</string>
+    <string name="tv_text_sa_loading">Loading please wait&#8230;</string>
 </resources>

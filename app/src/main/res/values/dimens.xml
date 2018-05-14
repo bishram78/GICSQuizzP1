@@ -22,4 +22,5 @@
     <dimen name="rl_container_height">240dp</dimen>
     <dimen name="img_height_que_6of8">180dp</dimen>
     <dimen name="ma_title_text_height">42dp</dimen>
+    <dimen name="text_size_fifty_six">56sp</dimen>
 </resources>
