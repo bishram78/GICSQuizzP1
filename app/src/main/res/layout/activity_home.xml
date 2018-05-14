@@ -10,10 +10,10 @@
         android:gravity="center"
         android:textColor="@color/colorWhite"
         android:background="@color/colorPrimaryDark"
-        android:textSize="@dimen/text_size_26sp"
-        android:textStyle="bold"
+        android:textSize="@dimen/text_size_18sp"
+        android:paddingBottom="@dimen/margin_padding_8dp"
         android:singleLine="true"
-        android:fontFamily="sans-serif-condensed"
+        android:fontFamily="serif"
         android:ellipsize="end"
         android:marqueeRepeatLimit="marquee_forever"
         android:text="@string/main_activity_toolbar_title"/>
@@ -31,8 +31,52 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite">
+
+                <TextView
+                    android:id="@+id/id_tv_ques_first"
+                    style="@style/questionTVStyle"
+                    android:text="@string/text_ques_first"/>
+
+                <RadioGroup
+                    style="@style/radioButtonGroup"
+                    android:layout_below="@id/id_tv_ques_first">
+
+                    <RadioButton
+                        android:id="@+id/id_rb_opt_1_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/option_1_a"
+                        android:textSize="@dimen/text_size_16sp"/>
+
+                    <RadioButton
+                        android:id="@+id/id_rb_opt_1_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_16sp"
+                        android:text="@string/option_1_b"/>
+
+                    <RadioButton
+                        android:id="@+id/id_rb_opt_1_c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_16sp"
+                        android:text="@string/option_1_c"/>
+
+                    <RadioButton
+                        android:id="@+id/id_rb_opt_1_d"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_16sp"
+                        android:text="@string/option_1_d"/>
+                </RadioGroup>
+            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -41,5 +85,6 @@
         android:paddingTop="@dimen/margin_padding_16dp"
         android:paddingBottom="@dimen/margin_padding_16dp"
         android:background="@color/colorPrimaryDark"
+        android:onClick="quizResultButton"
         android:text="@string/btn_txt_quiz_result"/>
 </LinearLayout>

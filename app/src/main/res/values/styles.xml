@@ -23,18 +23,24 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/bkg_border_dashed_small_ques_tv</item>
-        <item name="android:padding">@dimen/margin_padding_12dp</item>
-        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:paddingLeft">@dimen/margin_padding_24dp</item>
+        <item name="android:paddingEnd">@dimen/margin_padding_24dp</item>
+        <item name="android:paddingTop">@dimen/margin_padding_16dp</item>
+        <item name="android:paddingBottom">@dimen/margin_padding_16dp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
         <item name="android:textSize">@dimen/text_size_18sp</item>
-        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
-    <!-- radioButton option Style -->
-    <style name="radioButtonStyle">
+    <!-- radioGroup Style -->
+    <style name="radioButtonGroup">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:textSize">@dimen/text_size_16sp</item>
-        <item name="android:onClick">optionsEvent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bkg_border_dashed_small_radio_group</item>
+        <item name="android:paddingLeft">@dimen/margin_padding_24dp</item>
+        <item name="android:paddingEnd">@dimen/margin_padding_24dp</item>
+        <item name="android:paddingTop">@dimen/margin_padding_16dp</item>
+        <item name="android:paddingBottom">@dimen/margin_padding_16dp</item>
     </style>
 
     <!-- checkbox option Style -->

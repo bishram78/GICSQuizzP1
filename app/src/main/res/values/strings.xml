@@ -7,7 +7,7 @@
     <string name="java_txt_error_missing">One of your question is missing.\nPlease make sure that you have ticked all question.</string>
 
     <!--Question number one-->
-    <string name="text_ques_first">Question: 1 of 8\nChoose an option from the four given below, that describe what the \'Android\' is?</string>
+    <string name="text_ques_first">Question: 1 of 8\nChoose an option from the four given below, that describe what \'Android\' is?</string>
     <string name="text_ques_first_test">When was the Course of Google India Challenge Scholarship 2018 started?</string>
 
     <!--Question number two-->
@@ -47,8 +47,8 @@
 
     <string name="option_1_a">Application</string>
     <string name="option_1_b">Smart Phone</string>
-    <string name="option_1_c">Programming Language</string>
-    <string name="option_1_d">Operating System</string>
+    <string name="option_1_c">Operating System</string>
+    <string name="option_1_d">Programming Language</string>
 
     <string name="option_1_a_test">January 1</string>
     <string name="option_1_b_test">January 21</string>

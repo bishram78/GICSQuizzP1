@@ -13,6 +13,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,10 +21,41 @@ import java.lang.reflect.Field;
 
 public class MainActivity extends AppCompatActivity {
 
+    private RadioButton option_1_a, option_1_b, option_1_c, option_1_d;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        findAllViews();
+    }
+
+    private void findAllViews() {
+//        option_1_a = findViewById(R.id.id_rb_opt_1_a);
+//        option_1_b = findViewById(R.id.id_rb_opt_1_b);
+        option_1_c = findViewById(R.id.id_rb_opt_1_c);
+//        option_1_d = findViewById(R.id.id_rb_opt_1_d);
+    }
+
+    /**
+     *  This is button click method to show quiz result.
+     */
+    public void quizResultButton(View view) {
+        int quizScore = calcQuizScore();
+        String customMsg = "Your score is " + quizScore + "/5";
+        String thankYou = "Thanks for participation.";
+        cToastShort(customMsg);
+        cToastShort(thankYou);
+    }
+
+    private int calcQuizScore() {
+        int totalScored = 0;
+
+        if (option_1_c.isChecked()) {
+            totalScored = totalScored + 5;
+        }
+        return totalScored;
     }
 
     /**
