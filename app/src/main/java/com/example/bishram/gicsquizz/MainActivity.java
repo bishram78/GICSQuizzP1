@@ -20,9 +20,6 @@ import java.lang.reflect.Field;
 
 public class MainActivity extends AppCompatActivity {
 
-    private int totalScore = 0;
-    Resources resources;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,35 +27,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * This method will calculate Total Score of Quiz.
-     */
-    protected int calculateScore() {
-        return 0;
-    }
-    /**
-     * This method called when SHOW SCORE button is clicked
-     */
-    public void quizResultButton(View view) {
-        totalScore = calculateScore();
-
-        Button btnQuizResult = findViewById(R.id.id_btn_quiz_result);
-        btnQuizResult.setText("Press back to exit");
-        btnQuizResult.setTextSize(18);
-        btnQuizResult.setBackgroundColor(Color.RED);
-        btnQuizResult.setEnabled(false);
-        }
-
-    /**
      * These are toast methods
      */
-    public void myToastShort(String toastMsg) {
+    public void cToastShort(String toastMsg) {
         Toast.makeText(getApplicationContext(), toastMsg, Toast.LENGTH_SHORT).show();
     }
-    public void myToastLong(String toastMsg) {
+    public void cToastLong(String toastMsg) {
         Toast.makeText(getApplicationContext(), toastMsg, Toast.LENGTH_LONG).show();
     }
 
-    public void sleep(int duration) {
+    public void sleepFor(int duration) {
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override
@@ -66,25 +44,5 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         }, duration);
-    }
-
-    public void optionsEvent(View view) {
-        switch (view.getId()) {/**
-            case R.id.option_1_a:
-                myToastShort("Click event carried forward.");
-                break;
-
-            case R.id.option_1_b:
-                myToastShort("Click event carried forward.");
-                break;
-
-            case R.id.option_1_c:
-                myToastShort("Click event carried forward.");
-                break;
-
-            case R.id.option_1_d:
-                myToastShort("Click event carried forward.");
-                break;*/
-        }
     }
 }

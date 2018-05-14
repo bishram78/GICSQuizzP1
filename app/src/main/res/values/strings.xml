@@ -32,6 +32,9 @@
     <!--Question number seven-->
     <string name="text_ques_seventh">Question: 7 of 8\nWrite the full form of the abbreviated word \'IDE\' in context with Android Studio.</string>
 
+    <!--Question number eight-->
+    <string name="text_ques_eighth">Question: 8 of 8\nWho developed Android Studio</string>
+
     <string name="text_total_score">%1$s \nYour total score is %2$d/%3$d.</string>
     <string name="thanks_4_participate">Thanks for participating in quiz.</string>
     <string name="visit_again">Please visit again.</string>
@@ -91,6 +94,12 @@
     <string name="option_5_b_test">Kunal Chawla &amp; Lyla Fujiwara</string>
     <string name="option_5_c_test">Katherine Kuan &amp; Lyla Fujiwara</string>
     <string name="option_5_d_test">Kunal Chawla, Katherine Kuan &amp; Lyla Fujiwara</string>
+
+    <string name="option_7_a"></string>
+    <string name="option_7_b"></string>
+    <string name="option_7_c"></string>
+    <string name="option_7_d"></string>
+
     <string name="iv_txt_question_sixth_img_desc">Question sixth banner</string>
     <string name="et_txt_q_sixth_hint">TextView, CheckBox, ImageButton</string>
 </resources>
