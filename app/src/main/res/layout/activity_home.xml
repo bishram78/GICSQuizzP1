@@ -132,8 +132,53 @@
                         android:text="@string/option_3_d"/>
                 </RadioGroup>
             </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/mainLLContainerStyle">
+
+                <TextView
+                    android:id="@+id/id_tv_ques_fourth"
+                    style="@style/questionTVStyle"
+                    android:text="@string/text_ques_fourth"/>
+
+                <RadioGroup
+                    style="@style/radioButtonGroup"
+                    android:layout_below="@id/id_tv_ques_fourth">
+
+                    <CheckBox
+                        android:id="@+id/id_cb_opt_4_a"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_4_a"/>
+
+                    <CheckBox
+                        android:id="@+id/id_cb_opt_4_b"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_4_b"/>
+
+                    <CheckBox
+                        android:id="@+id/id_cb_opt_4_c"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_4_c"/>
+
+                    <CheckBox
+                        android:id="@+id/id_cb_opt_4_d"
+                        style="@style/radioButtonOption"
+                        android:text="@string/option_4_d"/>
+                </RadioGroup>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/margin_padding_24dp"
+                android:text="@string/text_end_of_question"/>
         </LinearLayout>
     </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_padding_1px"
+        android:background="@color/colorBlack" />
 
     <Button
         android:layout_width="match_parent"

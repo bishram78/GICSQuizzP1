@@ -102,4 +102,5 @@
 
     <string name="iv_txt_question_sixth_img_desc">Question sixth banner</string>
     <string name="et_txt_q_sixth_hint">TextView, CheckBox, ImageButton</string>
+    <string name="text_end_of_question">--End of question--</string>
 </resources>
