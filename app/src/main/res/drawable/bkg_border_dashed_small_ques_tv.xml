@@ -5,7 +5,7 @@
 
             <solid android:color="@android:color/transparent" />
             <stroke
-                android:width="1px"
+                android:width="@dimen/margin_padding_1px"
                 android:color="#FF0000"
                 android:dashGap="4dp"
                 android:dashWidth="4dp" />
@@ -14,9 +14,7 @@
 
     <item
         android:id="@+id/shape_2"
-        android:left="1px"
-        android:right="1px"
-        android:top="1px">
+        android:top="@dimen/margin_padding_1px">
         <shape android:shape="rectangle">
 
             <solid android:color="@color/colorWhite" />
@@ -25,9 +23,7 @@
 
     <item
         android:id="@+id/shape_3"
-        android:left="1px"
-        android:right="1px"
-        android:top="1px">
+        android:top="@dimen/margin_padding_1px">
         <shape android:shape="rectangle">
 
             <solid android:color="#33ff82ea" />

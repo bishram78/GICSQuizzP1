@@ -14,8 +14,6 @@
 
     <item
         android:id="@+id/shape_2"
-        android:left="@dimen/margin_padding_1px"
-        android:right="@dimen/margin_padding_1px"
         android:top="@dimen/margin_padding_1px"
         android:bottom="@dimen/margin_padding_1px">
         <shape android:shape="rectangle">
