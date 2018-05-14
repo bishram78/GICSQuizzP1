@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private CheckBox option_4_a, option_4_b, option_4_c, option_4_d;
     private CheckBox option_5_a, option_5_b, option_5_c, option_5_d;
     private EditText editText_sixth_ans;
+    private EditText editText_seventh_ans;
     private RadioButton option_1_c;
     private RadioButton option_2_a;
     private RadioButton option_3_c;
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
     private void findAllViews() {
         btn_quiz_result = findViewById(R.id.id_btn_quiz_result);
         editText_sixth_ans = findViewById(R.id.id_et_ans_sixth);
+        editText_seventh_ans = findViewById(R.id.id_et_ans_seventh);
         option_1_c = findViewById(R.id.id_rb_opt_1_c);
         option_2_a = findViewById(R.id.id_rb_opt_2_a);
         option_3_c = findViewById(R.id.id_rb_opt_3_c);
@@ -62,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void quizResultButton(View view) {
         int quizScore = calcQuizScore();
-        String customMsg = "Your score is " + quizScore + "/20";
+        String customMsg = "Your score is " + quizScore + "/35";
         String thankYou = "Thanks for participation.";
         cToastShort(customMsg);
         cToastShort(thankYou);
@@ -75,7 +77,9 @@ public class MainActivity extends AppCompatActivity {
     private int calcQuizScore() {
         int totalScored = 0;
         String ansSixth = "Imageview, Textview And Button";
+        String ansSeventh = "Integrated Development Environment";
         String getAnsSixth = editText_sixth_ans.getText().toString();
+        String getAnsSeventh = editText_seventh_ans.getText().toString();
 
         if (option_1_c.isChecked()) {
             totalScored += 5;
@@ -104,6 +108,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (getAnsSixth.equals(ansSixth)) {
+            totalScored += 5;
+        }
+
+        if (getAnsSeventh.equals(ansSeventh)) {
             totalScored += 5;
         }
         return totalScored;
