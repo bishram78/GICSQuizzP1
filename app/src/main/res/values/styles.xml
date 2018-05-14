@@ -13,9 +13,8 @@
     <style name="mainLLContainerStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:orientation">vertical</item>
         <item name="android:layout_marginBottom">@dimen/margin_padding_24dp</item>
-        <item name="android:background">@drawable/bkg_border_dashed_small_ll_main</item>
+        <item name="android:background">@color/colorWhite</item>
     </style>
 
     <!-- questionTextView Style -->
@@ -41,6 +40,13 @@
         <item name="android:paddingEnd">@dimen/margin_padding_24dp</item>
         <item name="android:paddingTop">@dimen/margin_padding_16dp</item>
         <item name="android:paddingBottom">@dimen/margin_padding_16dp</item>
+    </style>
+
+    <!--radioButton option Style-->
+    <style name="radioButtonOption">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
     </style>
 
     <!-- checkbox option Style -->

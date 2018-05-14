@@ -21,7 +21,8 @@ import java.lang.reflect.Field;
 
 public class MainActivity extends AppCompatActivity {
 
-    private RadioButton option_1_a, option_1_b, option_1_c, option_1_d;
+    private RadioButton option_1_c;
+    private RadioButton option_2_a;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,10 +33,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void findAllViews() {
-//        option_1_a = findViewById(R.id.id_rb_opt_1_a);
-//        option_1_b = findViewById(R.id.id_rb_opt_1_b);
         option_1_c = findViewById(R.id.id_rb_opt_1_c);
-//        option_1_d = findViewById(R.id.id_rb_opt_1_d);
+        option_2_a = findViewById(R.id.id_rb_opt_2_a);
     }
 
     /**
@@ -43,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void quizResultButton(View view) {
         int quizScore = calcQuizScore();
-        String customMsg = "Your score is " + quizScore + "/5";
+        String customMsg = "Your score is " + quizScore + "/10";
         String thankYou = "Thanks for participation.";
         cToastShort(customMsg);
         cToastShort(thankYou);
@@ -53,7 +52,11 @@ public class MainActivity extends AppCompatActivity {
         int totalScored = 0;
 
         if (option_1_c.isChecked()) {
-            totalScored = totalScored + 5;
+            totalScored += 5;
+        }
+
+        if (option_2_a.isChecked()) {
+            totalScored += 5;
         }
         return totalScored;
     }
