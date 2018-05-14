@@ -13,6 +13,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btn_quiz_result;
     private CheckBox option_4_a, option_4_b, option_4_c, option_4_d;
     private CheckBox option_5_a, option_5_b, option_5_c, option_5_d;
+    private EditText editText_sixth_ans;
     private RadioButton option_1_c;
     private RadioButton option_2_a;
     private RadioButton option_3_c;
@@ -40,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void findAllViews() {
         btn_quiz_result = findViewById(R.id.id_btn_quiz_result);
+        editText_sixth_ans = findViewById(R.id.id_et_ans_sixth);
         option_1_c = findViewById(R.id.id_rb_opt_1_c);
         option_2_a = findViewById(R.id.id_rb_opt_2_a);
         option_3_c = findViewById(R.id.id_rb_opt_3_c);
@@ -64,13 +67,15 @@ public class MainActivity extends AppCompatActivity {
         cToastShort(customMsg);
         cToastShort(thankYou);
 
-        btn_quiz_result.setText("Press back key to EXIT");
+        btn_quiz_result.setText(R.string.txt_press_back_exit);
         btn_quiz_result.setEnabled(false);
         scrollView.setVisibility(View.GONE);
     }
 
     private int calcQuizScore() {
         int totalScored = 0;
+        String ansSixth = "Imageview, Textview And Button";
+        String getAnsSixth = editText_sixth_ans.getText().toString();
 
         if (option_1_c.isChecked()) {
             totalScored += 5;
@@ -96,6 +101,10 @@ public class MainActivity extends AppCompatActivity {
 
         else if (option_5_a.isChecked()&&option_5_b.isChecked()&&option_5_c.isChecked()&&option_5_d.isChecked()) {
             totalScored += 0;
+        }
+
+        if (getAnsSixth.equals(ansSixth)) {
+            totalScored += 5;
         }
         return totalScored;
     }

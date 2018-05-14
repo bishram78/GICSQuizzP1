@@ -202,6 +202,38 @@
                 </RadioGroup>
             </RelativeLayout>
 
+            <RelativeLayout
+                style="@style/mainLLContainerStyle">
+
+                <TextView
+                    android:id="@+id/id_tv_ques_sixth"
+                    style="@style/questionTVStyle"
+                    android:text="@string/text_ques_sixth"/>
+
+                <ImageView
+                    android:id="@+id/id_iv_opt_6th"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_below="@id/id_tv_ques_sixth"
+                    android:layout_marginTop="@dimen/margin_padding_16dp"
+                    android:layout_marginBottom="@dimen/margin_padding_16dp"
+                    android:contentDescription="@string/iv_txt_question_sixth_img_desc"
+                    android:src="@drawable/question_6_identify_image"/>
+
+                <EditText
+                    android:id="@+id/id_et_ans_sixth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/id_iv_opt_6th"
+                    android:inputType="textCapWords"
+                    android:padding="@dimen/margin_padding_12dp"
+                    android:layout_marginLeft="@dimen/margin_padding_16dp"
+                    android:layout_marginRight="@dimen/margin_padding_16dp"
+                    android:layout_marginBottom="@dimen/margin_padding_16dp"
+                    android:hint="@string/et_txt_q_sixth_hint"
+                    android:background="@drawable/bkg_border_line_edit_text"/>
+            </RelativeLayout>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -226,6 +258,7 @@
         android:paddingBottom="@dimen/margin_padding_12dp"
         android:background="@drawable/ripple_effect"
         android:onClick="quizResultButton"
+        android:textAllCaps="false"
         android:textStyle="bold"
         android:text="@string/btn_txt_quiz_result"/>
 </LinearLayout>
