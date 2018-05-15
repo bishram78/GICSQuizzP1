@@ -13,7 +13,7 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        int SLEEP_DURATION = 4000;
+        int SLEEP_DURATION = 2000;
         timer4Activity(SLEEP_DURATION);
     }
 
@@ -24,6 +24,8 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 Intent intent = new Intent(SplashActivity.this, MainActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in_anim, R.anim.fade_out_anim);
+                finish();
             }
         }, duration);
     }
