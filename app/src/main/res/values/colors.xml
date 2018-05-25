@@ -12,4 +12,6 @@
     <color name="colorTextBackground">#CC000000</color>
     <color name="colorYellow">#D2FFEA00</color>
     <color name="colorRed">#FF0000</color>
+    <color name="colorBlueText">#000DFF</color>
+    <color name="colorBlackTranslucent99">#99000000</color>
 </resources>

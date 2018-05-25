@@ -111,4 +111,15 @@
     <string name="tv_text_sa_quizz">Quizz</string>
     <string name="tv_text_sa_welcome_to_the">Welcome to the</string>
     <string name="tv_text_sa_loading">Loading please wait&#8230;</string>
+
+    <!--String resources for the LoginActivity-->
+    <string name="iv_text_desc_login_bkg_banner">login_background_banner</string>
+    <string name="tv_text_al_forgot_password"><u>Forgot password !</u></string>
+    <string name="tv_text_al_dont_have_ac">Don\'t have account yet?</string>
+    <string name="tv_text_al_create_now"><u>Create Now</u>!</string>
+    <string name="text_al_g">G</string>
+    <string name="text_al_q">Q</string>
+    <string name="text_al_sign_in_to_cntnu">Sign in to continue</string>
+    <string name="text_hint_al_gq_username">GQ Username</string>
+    <string name="text_hint_al_gq_password">GQ Password</string>
 </resources>

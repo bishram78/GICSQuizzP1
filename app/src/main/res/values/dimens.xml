@@ -2,6 +2,7 @@
 <resources>
     <dimen name="margin_padding_0px">0px</dimen>
     <dimen name="margin_padding_1px">1px</dimen>
+    <dimen name="margin_padding_1dp">1dp</dimen>
     <dimen name="margin_padding_4dp">4dp</dimen>
     <dimen name="margin_padding_6dp">6dp</dimen>
     <dimen name="margin_padding_8dp">8dp</dimen>
@@ -10,6 +11,7 @@
     <dimen name="margin_padding_16dp">16dp</dimen>
     <dimen name="margin_padding_20dp">20dp</dimen>
     <dimen name="margin_padding_24dp">24dp</dimen>
+    <dimen name="margin_padding_32dp">32dp</dimen>
     <dimen name="margin_padding_40dp">40dp</dimen>
     <dimen name="margin_padding_80dp">80dp</dimen>
 
@@ -19,8 +21,11 @@
     <dimen name="text_size_24sp">24sp</dimen>
     <dimen name="text_size_26sp">26sp</dimen>
     <dimen name="text_size_28sp">28sp</dimen>
+
     <dimen name="rl_container_height">240dp</dimen>
     <dimen name="img_height_que_6of8">180dp</dimen>
     <dimen name="ma_title_text_height">42dp</dimen>
     <dimen name="text_size_fifty_six">56sp</dimen>
+    <dimen name="text_size_38sp">38sp</dimen>
+    <dimen name="text_size_42sp">42sp</dimen>
 </resources>
